@@ -1,0 +1,71 @@
+
+
+.cabecera__elementos{
+    display: flex;
+    width: 100%;
+    height: 80px;
+}
+
+    .cabecera__iconos{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        width: 30%;
+    }
+        .img__juego{
+            height: 29.16667366027832px;
+            width: 40.023834228515625px;
+            left: 4.986473083496094px;
+            top: 10.416671752929688px;
+            border-radius: 0px;
+        }
+        .img__alura{
+            height: 18.500003814697266px;
+            width: 63.10405349731445px;
+            left: 0px;
+            top: 0px;
+            border-radius: 0px;
+        }
+        .img__geek{
+            height: 18.500003814697266px;
+            width: 61.293434143066406px;
+            left: 64.70919799804688px;
+            top: 0px;
+            border-radius: 0px;
+        }
+    .cabecera__barra{
+        display: flex;
+        align-items: center;
+        width: 50%;
+
+    }
+        .barra__lupa{
+            display: flex;
+            gap: 10px;
+            width: 100%;
+            margin-left: 20px;
+        }
+            .barra{
+                height: 40px;
+                width: 45%;
+                background: #F5F5F5;
+                border-radius: 20px;
+                border: none;
+                padding: 0 0 0 3%;
+            }
+            .img__lupa{
+                height: 2vw;
+                width: 2vw;
+            }
+            .btn__login{
+                width: 30%;
+                padding: 1.5%;
+                border: 1px solid #2A7AE4;
+                font-size: 1.5vw;
+                color: #2A7AE4;
+                background-color: white;
+            }
+
+            .btn__login:hover{
+                cursor: pointer;
+            }

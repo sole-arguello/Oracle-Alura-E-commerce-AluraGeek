@@ -1,0 +1,15 @@
+.seccion__galeria{
+    margin-top: 50px;
+    background: #E5E5E5;
+    display: flex;
+    flex-direction: column;
+}
+.contenido__productos{
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+}
+.productos__menu{
+    width: 100%;
+    display: flex;
+}

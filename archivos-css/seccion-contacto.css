@@ -43,15 +43,15 @@
             height: 29px;
         }
         .formulario__mensaje{
-            max-height: 100px;
-            min-height: 98px;
-            max-width: 585px;
-            min-width: 583px;
+            width: 100%;
+            display: block;
+            resize: none;
             margin-bottom: 10px;
             font-size: 1.2vw;
             padding: 2% 0 0 2%;
             border: none;
             color: #A2A2A2;
+            box-sizing: border-box;
         }
         .formulario__btn--enviar{
             color: #FFFFFF;

@@ -1,14 +1,18 @@
 .seccion__galeria{
     display: flex;
+    flex-direction: column;
+    align-items: center;
     background: #E5E5E5;
     width: 100%;
+    padding-bottom: 5%;
 }
 
     .contenido__productos{
         display: flex;
         flex-direction: column;
-        padding: 5%;
-        width: 100%;
+        padding-top: 5%;
+        width: 90%;
+
     }
         .contenido__titulo{
             display: flex;
@@ -31,6 +35,9 @@
         }
             .productos__menu{
                 display: flex;
+                color: #464646;
+                font-size: 1.3vw;
+                line-height: 1.8;
                 width: 100%;
             }
                 .productos__lista{
@@ -40,24 +47,12 @@
                     .productos__img{
                         width: 95%;
                     }
-                    .producto__descripcion{
-                        font-size: 1vw;
-                        fill: solid;
-                        color: #464646;
-                        margin: 10px 0;
-                    }
                     .producto__precio{
-                        font-size: 1vw;
                         font-weight: bold;
-                        color: #464646;
-                        margin: 0 0 10px 0;
                     }
                     .producto__link{
-                        font-size: 1vw;
                         font-weight: bold;
-                        fill: solid;
                         text-decoration: none;
                         color: #2A7AE4;
-
                     }
                 

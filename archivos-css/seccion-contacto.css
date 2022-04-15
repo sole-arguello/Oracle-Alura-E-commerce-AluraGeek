@@ -1,0 +1,66 @@
+.seccion__contacto{
+    background: #EAF2FD;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 5%;
+}
+
+    .contacto__contenido--logo{
+        display: flex;
+    }
+
+    .contacto__contenido--informacion{
+        display: flex;
+        flex-direction: column;
+        line-height: 2.5;
+    }
+        .informacion{
+            color: #464646;
+            font-size: 1.5vw;
+            font-style: italic;
+            text-decoration: none;
+        }
+
+    .contacto__contenido--formulario{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        line-height: 2.5;
+    }
+        .formulario__titulo{
+            font-size: 1.5vw;
+            font-style: italic;
+            color: #464646;
+            font-weight: bold;
+        }
+        .formulario__nombre{
+            color: #A2A2A2;
+            border: none;
+            font-size: 1.2vw;
+            padding: 2% 0 2% 2%;
+            margin-bottom: 10px;
+            height: 29px;
+        }
+        .formulario__mensaje{
+            max-height: 100px;
+            min-height: 98px;
+            max-width: 585px;
+            min-width: 583px;
+            margin-bottom: 10px;
+            font-size: 1.2vw;
+            padding: 2% 0 0 2%;
+            border: none;
+            color: #A2A2A2;
+        }
+        .formulario__btn--enviar{
+            color: #FFFFFF;
+            background-color: #2A7AE4;
+            width: 25%;
+            padding: 16px;
+            font-size: 1.2vw;
+            border: none;
+        }
+        .formulario__btn--enviar:hover{
+            cursor: pointer;
+        }

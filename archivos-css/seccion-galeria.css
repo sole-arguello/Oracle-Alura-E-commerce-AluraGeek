@@ -42,6 +42,7 @@
                 width: 100%;
             }
                 .productos__lista{
+                    flex: 1 0 0;
                     display: flex;
                     flex-direction: column;
                 }

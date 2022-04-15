@@ -6,149 +6,159 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, user-scalable=yes, minimum-scale=1.0, maximum-scale=3.0, initial-scale=1.0" />
     
-    <title>Mi E-comerce</title>
-    <link rel="stylesheet" href="archivos-css/reset.css">
-    <link rel="stylesheet" href="archivos-css/cabecera.css">
-    <link rel="stylesheet" href="archivos-css/seccion-banner.css">
-    <link rel="stylesheet" href="archivos-css/seccion--galeria.css">
+    <title>AluraGeek</title>
+    <link rel="stylesheet" href="./archivos-css/reset.css">
+    <link rel="stylesheet" href="./archivos-css/cabecera.css">
+    <link rel="stylesheet" href="./archivos-css/seccion-banner.css">
+    <link rel="stylesheet" href="./archivos-css/seccion--galeria.css">
 </head>
 <body>
     
     <header class="cabecera">
-        <div class="cabecera__elementos">
-            <div class="cabecera__iconos">
-                <img src="imagenes/juego.png" class="img__juego">
-                <img src="imagenes/Alura.png" class="img__alura">
-                <img src="imagenes/Geek.png" class="c">
-            </div>
-            
-            <div class="cabecera__barra">
-                <div class="barra__lupa">
-                    <input class="barra" type="text" placeholder="¿Que desea buscar?">
-                    <img src="imagenes/lupa.png" class="img__lupa">
+        <div class="cabecera__container">
+            <div class="cabecera__logo">
+                <a class="cabecera__inicio-pagina" href="#">
+                    <img src="./Imagenes/cabecera/Logo.png" class="logo" alt="logo">
+                </a>
+                <div class="cabecera__barra-busqueda">
+                    <input class="barra--busqueda" type="text" placeholder="¿Que desea buscar?">
+                    <i class="fa-solid fa-magnifying-glass icono--lupa"></i>
                 </div>
-
-                <button class="btn__login" >Login</button>
-
             </div>
+            <button class="btn__login" >Login</button>
         </div>
 
-        
     </header>
+
     <main>
         <section class="seccion__banner">
-            <img  class="banner__img" 
-            src="https://i.gzn.jp/img/2020/02/06/game-nerf-buff-original/geeky-shots-hQ4BQ3wdHsQ-unsplash_m.jpg" 
-            alt="Link de imagen champion">
-            <div class="banner__texto">
-                <h2 class="banner__subtitulo">Febrero Promocional</h2>
-                <p class="banner__descfripcion">Producto selecionados con 33% de descuento</p>
-                <button class="banner__btn">Ver Consolas</button>
+            <div class="banner__contenido">
+                <div class="banner__descripcion">
+                    <h1 class="banner__titulo">Febrero Promocional</h1>
+                    <p class="banner__texto">Producto selecionados con 33% de descuento</p>
+                    <button class="banner__btn--cosolas">Ver Consolas</button>
+                </div>
             </div>
             
         </section>
-         
+        
         <section class="seccion__galeria">
             <div class="contenido__productos">
-                <div>
+                <div class="contenido__titulo">
                     <h2 class="productos__titulo">Star Wars</h2>
-                    <a class="ver-todos__link" href=""><i class="fa-regular fa-arrow-right"></i>Ver todo</a>
+                    <a class="ver-todos__link" href="#">
+                        Ver todo
+                    <i class="fa-solid fa-arrow-right"></i>
+                    </a>
 
                 </div>
-                <ul class="productos__menu">
-                    <li class="productos__lista">
-                        <img class="productos__img" src="Imagenes/star ward/foto1.png"> 
-                        <p class="producto__descripcion">Producto XYZ</p>
-                        <p class="producto__precio">$ 60,00</p>
-                        <a class="producto__link" href="">Ver producto</a>
-                    </li>
-    
-                    <li class="starwars__lista">
-                        <img class="productos__img" src="Imagenes/star ward/foto2.png"> 
-                        <p class="producto__descripcion">Producto XYZ</p>
-                        <p class="producto__precio">$ 60,00</p>
-                        <a class="producto__link" href="">Ver producto</a>
-                    </li>
-    
-                    <li class="starwars__lista">
-                        <img class="productos__img" src="Imagenes/star ward/foto3.png"> 
-                        <p class="producto__descripcion">Producto XYZ</p>
-                        <p class="producto__precio">$ 60,00</p>
-                        <a class="producto__link" href="">Ver producto</a>
-                    </li>
-    
-                    <li class="starwars__lista">
-                        <img class="productos__img" src="Imagenes/star ward/foto4.png"> 
-                        <p class="producto__descripcion">Producto XYZ</p>
-                        <p class="producto__precio">$ 60,00</p>
-                        <a class="producto__link" href="">Ver producto</a>
-                    </li>
-    
-                    <li class="starwars__lista">
-                        <img class="productos__img" src="Imagenes/star ward/foto5.png"> 
-                        <p class="producto__descripcion">Producto XYZ</p>
-                        <p class="producto__precio">$ 60,00</p>
-                        
-                        <a class="producto__link" href="">Ver producto</a>
-                    </li>
-    
-                    <li class="starwars__lista">
-                        <img class="productos__img" src="Imagenes/star ward/foto6.png"> 
-                        <p class="producto__descripcion">Producto XYZ</p>
-                        <p class="producto__precio">$ 60,00</p>
-                        <a class="producto__link" href="">Ver producto</a>
-                    </li>
-                </ul>
-    
-            </div>
 
+                <div class="contenido__menu">
+                    <ul class="productos__menu">
+                        <li class="productos__lista">
+                            <img class="productos__img" src="Imagenes/star ward/foto1.png"> 
+                            <p class="producto__descripcion">Producto XYZ</p>
+                            <p class="producto__precio">$ 60,00</p>
+                            <a class="producto__link" href="">Ver producto</a>
+                        </li>
+        
+                        <li class="productos__lista">
+                            <img class="productos__img" src="Imagenes/star ward/foto2.png"> 
+                            <p class="producto__descripcion">Producto XYZ</p>
+                            <p class="producto__precio">$ 60,00</p>
+                            <a class="producto__link" href="">Ver producto</a>
+                        </li>
+        
+                        <li class="productos__lista">
+                            <img class="productos__img" src="Imagenes/star ward/foto3.png"> 
+                            <p class="producto__descripcion">Producto XYZ</p>
+                            <p class="producto__precio">$ 60,00</p>
+                            <a class="producto__link" href="">Ver producto</a>
+                        </li>
+        
+                        <li class="productos__lista">
+                            <img class="productos__img" src="Imagenes/star ward/foto4.png"> 
+                            <p class="producto__descripcion">Producto XYZ</p>
+                            <p class="producto__precio">$ 60,00</p>
+                            <a class="producto__link" href="">Ver producto</a>
+                        </li>
+        
+                        <li class="productos__lista">
+                            <img class="productos__img" src="Imagenes/star ward/foto5.png"> 
+                            <p class="producto__descripcion">Producto XYZ</p>
+                            <p class="producto__precio">$ 60,00</p>
+                            
+                            <a class="producto__link" href="">Ver producto</a>
+                        </li>
+        
+                        <li class="productos__lista">
+                            <img class="productos__img" src="Imagenes/star ward/foto6.png"> 
+                            <p class="producto__descripcion">Producto XYZ</p>
+                            <p class="producto__precio">$ 60,00</p>
+                            <a class="producto__link" href="">Ver producto</a>
+                        </li>
+                    </ul>
+        
+                </div>
+                
+            </div>
+<!--
             <div class="contenido__productos">
-                <h2 class="productos__titulo">Consolas</h2>
-                <ul class="productos__menu">
-                    <li class="consola__lista">
-                        <img class="productos__img" src="Imagenes/consolas/foto1.png"> 
-                        <p class="producto__descripcion">Producto XYZ</p>
-                        <p class="producto__precio">$ 60,00</p>
-                        <a class="producto__link" href="">Ver producto</a>
-                    </li>
-    
-                    <li class="consola__lista">
-                        <img class="productos__img" src="Imagenes/consolas/foto2.png"> 
-                        <p class="producto__descripcion">Producto XYZ</p>
-                        <p class="producto__precio">$ 60,00</p>
-                        <a class="producto__link" href="">Ver producto</a>
-                    </li>
-    
-                    <li class="consola__lista">
-                        <img class="productos__img" src="Imagenes/consolas/foto3.png"> 
-                        <p class="producto__descripcion">Producto XYZ</p>
-                        <p class="producto__precio">$ 60,00</p>
-                        <a class="producto__link" href="">Ver producto</a>
-                    </li>
-    
-                    <li class="consola__lista">
-                        <img class="productos__img" src="Imagenes/consolas/foto4.png"> 
-                        <p class="producto__descripcion">Producto XYZ</p>
-                        <p class="producto__precio">$ 60,00</p>
-                        <a class="producto__link" href="">Ver producto</a>
-                    </li>
-    
-                    <li class="consola__lista">
-                        <img class="productos__img" src="Imagenes/consolas/foto5.png"> 
-                        <p class="producto__descripcion">Producto XYZ</p>
-                        <p class="producto__precio">$ 60,00</p>
-                        <a class="producto__link" href="">Ver producto</a>
-                    </li>
-    
-                    <li class="consola__lista">
-                        <img class="productos__img" src="Imagenes/consolas/foto6.png"> 
-                        <p class="producto__descripcion">Producto XYZ</p>
-                        <p class="producto__precio">$ 60,00</p>
-                        <a class="producto__link" href="">Ver producto</a>
-                    </li>
-                </ul>
-            </div>
+               <div class="contenido__titulo">
+                    <h2 class="productos__titulo">Consolas</h2>
+                    <a class="ver-todos__link" href="#">
+                        Ver todo
+                    <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>               
+                <div class="contenido__menu">
+                    <ul class="productos__menu">
+                        <li class="consola__lista">
+                            <img class="productos__img" src="Imagenes/consolas/foto1.png"> 
+                            <p class="producto__descripcion">Producto XYZ</p>
+                            <p class="producto__precio">$ 60,00</p>
+                            <a class="producto__link" href="">Ver producto</a>
+                        </li>
+        
+                        <li class="consola__lista">
+                            <img class="productos__img" src="Imagenes/consolas/foto2.png"> 
+                            <p class="producto__descripcion">Producto XYZ</p>
+                            <p class="producto__precio">$ 60,00</p>
+                            <a class="producto__link" href="">Ver producto</a>
+                        </li>
+        
+                        <li class="consola__lista">
+                            <img class="productos__img" src="Imagenes/consolas/foto3.png"> 
+                            <p class="producto__descripcion">Producto XYZ</p>
+                            <p class="producto__precio">$ 60,00</p>
+                            <a class="producto__link" href="">Ver producto</a>
+                        </li>
+        
+                        <li class="consola__lista">
+                            <img class="productos__img" src="Imagenes/consolas/foto4.png"> 
+                            <p class="producto__descripcion">Producto XYZ</p>
+                            <p class="producto__precio">$ 60,00</p>
+                            <a class="producto__link" href="">Ver producto</a>
+                        </li>
+        
+                        <li class="consola__lista">
+                            <img class="productos__img" src="Imagenes/consolas/foto5.png"> 
+                            <p class="producto__descripcion">Producto XYZ</p>
+                            <p class="producto__precio">$ 60,00</p>
+                            <a class="producto__link" href="">Ver producto</a>
+                        </li>
+        
+                        <li class="consola__lista">
+                            <img class="productos__img" src="Imagenes/consolas/foto6.png"> 
+                            <p class="producto__descripcion">Producto XYZ</p>
+                            <p class="producto__precio">$ 60,00</p>
+                            <a class="producto__link" href="">Ver producto</a>
+                        </li>
+                    </ul>
+                </div>
 
+            </div>
+<!--
             <div class="contenido__productos">
                 <h2 class="productos__titulo">Diversos</h2>
                 <ul class="productos__menu">
@@ -194,9 +204,10 @@
                         <a class="producto__link" href="">Ver producto</a>
                     </li>
                 </ul>    
-            </div>      
+            </div> -->      
         </section>
-    </main>   
+    </main> 
+
     <script src="https://kit.fontawesome.com/26f759a832.js" crossorigin="anonymous"></script>
 </body>
 </html>

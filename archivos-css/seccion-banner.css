@@ -1,41 +1,44 @@
-.banner__img{
-    /*background-image: url("https://i.gzn.jp/img/2020/02/06/game-nerf-buff-original/geeky-shots-hQ4BQ3wdHsQ-unsplash_m.jpg" );*/
-    position: absolute;
+.banner__contenido{
+    display: flex;
+    background-image: url(../Imagenes/banner-image.png);
+    background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    
-    z-index: -1;
+    height: 452px;
 }
-.banner__texto{
-    width: 100%;
-    color: #FFFFFF;
-    padding: 12% 0 0 5%;
-    line-height: 1.5;
-}
-.banner__subtitulo{
-    font-size: 3.5vw;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-style: italic;
-    font-weight: bold;
-}
-.banner__descfripcion{
-    font-size: 2vw;
-    font-weight: bold;
-}
-.banner__btn{
-    color: #FFFFFF;
-    background-color: #2A7AE4;
-    font-weight: 400, regular;
-    padding: 16px;
-    margin-top: 10px;
-    border: none;
-    font-size: 1vw;
-}
-.banner__btn:hover{
-    cursor: pointer;
-    
-}
-
-
-    
+    .banner__descripcion{
+        display: flex;
+        flex-direction: column;
+        padding-top: 15%;
+        padding-left: 5%;
+        width: 100%;
+    }
+        .banner__titulo{
+           /* font-family: Georgia, 'Times New Roman', Times, serif;*/
+            font-style: italic, cursive;
+            font-weight: bold;
+            font-size: 4.5vw;
+            color: white;
+            margin-bottom: 2%;
+        }
+        .banner__texto{
+            /*font-family: Georgia, 'Times New Roman', Times, serif;*/
+            font-style: italic, cursive;
+            font-size: 2.1vw;
+            color: #FFFFFF;
+            margin-bottom: 2%;
+        }
+        .banner__btn--cosolas{
+            width: 12%;
+            color: #FFFFFF;
+            background-color: #2A7AE4;
+            font-weight: 400, regular;
+            padding: 16px;
+            margin-top: 10px;
+            border: none;
+            font-size: 1.2vw;
+        }
+        .banner__btn--cosolas:hover{
+            cursor: pointer;
+        }

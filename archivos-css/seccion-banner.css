@@ -18,7 +18,7 @@
     }
         .banner__titulo{
            /* font-family: Georgia, 'Times New Roman', Times, serif;*/
-            font-style: italic, cursive;
+            font-style: italic;
             font-weight: bold;
             font-size: 4.5vw;
             color: white;
@@ -27,7 +27,7 @@
         }
         .banner__texto{
             /*font-family: Georgia, 'Times New Roman', Times, serif;*/
-            font-style: italic, cursive;
+            font-style: italic;
             font-size: 2.1vw;
             color: #FFFFFF;
             margin-bottom: 2%;
@@ -36,7 +36,6 @@
             width: 230px;
             color: #FFFFFF;
             background-color: #2A7AE4;
-            font-weight: 400, regular;
             padding: 16px;
             margin-top: 10px;
             border: none;
@@ -45,3 +44,21 @@
         .banner__btn--cosolas:hover{
             cursor: pointer;
         }
+
+@media screen and (max-width: 480px){
+
+    .banner__titulo{
+        font-size: 6.5vw;
+    }
+    .banner__texto{
+        font-size: 3.1vw;
+        text-shadow: 6px 6px 10px rgb(0 0 0 / 30%);
+    }
+
+    .banner__btn--cosolas{
+        width: 110px;
+        font-size: 15px;
+        padding: 8px;
+    }
+
+}

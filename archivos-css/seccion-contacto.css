@@ -1,5 +1,5 @@
 .seccion__contacto{
-    background: #EAF2FD;
+    background: var(--background-contacto);
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -17,8 +17,9 @@
         line-height: 2.5;
     }
         .informacion{
-            color: #464646;
+            color: var(--color-texto-contacto);
             text-decoration: none;
+            font-weight: 500;
         }
 
     .contacto__contenido--formulario{
@@ -29,29 +30,31 @@
         font-size: 20px;
     }
         .formulario__titulo{
-            color: #464646;
-            font-weight: bold;
+            color: var(--color-texto-contacto);
+            font-weight: 700;
         }
         .formulario__nombre{
-            color: #A2A2A2;
+            color: var(--color-textos-formulario);
             border: none;
             padding: 2% 0 2% 2%;
             margin-bottom: 10px;
             height: 29px;
+            font-weight: 400;
         }
         .formulario__mensaje{
             width: 100%;
+            font-weight: 400;
             display: block;
             resize: none;
             margin-bottom: 10px;
             padding: 2% 0 0 2%;
             border: none;
-            color: #A2A2A2;
+            color: var(--color-textos-formulario);
             box-sizing: border-box;
         }
         .formulario__btn--enviar{
-            color: #FFFFFF;
-            background-color: #2A7AE4;
+            color: var(--color-texto-btn);
+            background-color: var(--color-botones-azules);
             width: 25%;
             padding: 20px;
             font-size: 14px;

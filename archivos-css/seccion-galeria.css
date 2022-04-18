@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #E5E5E5;
+    background: var(--background-galeria);
     width: 100%;
     padding-bottom: 5%;
 }
@@ -21,11 +21,12 @@
         }
             .productos__titulo{
                 font-size: 3vw;
+                font-weight: 700;
                 margin-bottom: 2%;
             }
             .ver-todos__link{
-                color: #2A7AE4;
-                font-weight: bold;
+                color: var(--color-textos-link);
+                font-weight: 700;
                 font-size: 1.5vw;
                 text-decoration: none;
             }
@@ -36,26 +37,40 @@
         }
             .productos__menu{
                 display: flex;
-                color: #464646;
+                color: var(--color-textos-contacto);
                 font-size: 1.3vw;
                 line-height: 1.8;
                 width: 100%;
+                
             }
                 .productos__lista{
                     flex: 1 0 0;
+                    /*si puede crecer / si puede encojer/ medida base*/
                     display: flex;
                     flex-direction: column;
+                    
                 }
                     .productos__img{
                         width: 95%;
                     }
+                    .producto__descripcion{
+                        font-weight: 500;
+                    }
                     .producto__precio{
-                        font-weight: bold;
+                        font-weight: 700;
                     }
                     .producto__link{
-                        font-weight: bold;
+                        font-weight: 700;
                         text-decoration: none;
-                        color: #2A7AE4;
+                        color: var(--color-textos-link);
                     }
                 
 
+@media screen and(max-width: 480px) {
+    .productos__menu{
+       flex-wrap: wrap; 
+    }
+        .productos__lista{
+            flex: 1 0 50%;
+        }
+}

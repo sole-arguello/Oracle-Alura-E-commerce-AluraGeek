@@ -14,15 +14,15 @@
         }
             .barra--busqueda{
                 font-size: 1.5vw;
-                background-color:#f5f5f5;
+                background-color: var(--background-barra-nav);
                 border: 1px;
                 border-radius: 60px;
-                border-color: #f5f5f5;
+                border-color: var(--border-color-barra-nav);
                 padding: 4% 100% 4% 5%;
             }
             .icono--lupa{
                 font-size: 1.5vw;
-                color: #a3a3a3;
+                color: var(--color-icono-lupa);
                 position: absolute;
                 left: 190%;
                 top: 10px;
@@ -30,10 +30,10 @@
     .btn__login{
         width: 15%;
         padding: 1%;
-        border: 1px solid #2A7AE4;
+        border: 1px solid var(--border-color-btn-login);
         font-size: 1.5vw;
-        color: #2A7AE4;
-        background-color: white;
+        color: var(--color-textos-link);
+        background-color: var(--background-boton-login);
     }
     .btn__login:hover{
         cursor: pointer;

@@ -1,1 +1,25 @@
-colores:
+-colores de fondo:
+background-barra-nav: #f5f5f5;
+background-boton-login: #FFFFFF;
+background-galeria: #E5E5E5;
+background-contacto: #EAF2FD;
+
+
+-colores
+color-icono-lupa: #a3a3a3;
+color-botones: #2A7AE4;
+color-textos-banner: #FFFFFF;
+color-textos-contacto: #464646;
+color-textos-formulario: #A2A2A2;
+
+-somras
+sombra-textos-banner: 6px 6px 10px rgb(0 0 0 / 30%);
+
+-borde:
+border-color-barra-nav: #f5f5f5;
+
+-boton
+border-color-botones: #2A7AE4;
+
+-fuente texto
+Raleway: "Raleway", sans-serif;

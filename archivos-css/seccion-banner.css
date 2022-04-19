@@ -44,6 +44,14 @@
             cursor: pointer;
         }
 
+@media screen and (max-width: 768px) {
+    .banner__btn--cosolas{
+        width: 15vw;
+        font-size: 14px;
+        padding: 2%;
+    }
+
+}
 @media screen and (max-width: 480px){
 
     .banner__titulo{

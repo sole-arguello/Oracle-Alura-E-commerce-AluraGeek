@@ -13,15 +13,16 @@
             position: relative;
         }
             .barra--busqueda{
-                font-size: 1.5vw;
+                font-size: 16px;
+                font-weight: 400;
                 background-color: var(--background-barra-nav);
                 border: 1px;
                 border-radius: 60px;
                 border-color: var(--border-color-barra-nav);
-                padding: 4% 100% 4% 5%;
+                padding: 6% 100% 6% 5%;
             }
             .icono--lupa{
-                font-size: 1.5vw;
+                font-size: 16px;
                 color: var(--color-icono-lupa);
                 position: absolute;
                 left: 190%;
@@ -31,7 +32,8 @@
         width: 15%;
         padding: 1%;
         border: 1px solid var(--border-color-btn-login);
-        font-size: 1.5vw;
+        font-size: 16px;
+        font-weight: 600;
         color: var(--color-textos-link);
         background-color: var(--background-boton-login);
     }
@@ -39,6 +41,63 @@
         cursor: pointer;
     }
 
+    @media screen and (max-width: 768px) {
+        .cabecera__logo{
+            width: 64%;
+            gap: 0px;
+            
+        }
+            .logo{
+                align-items: center;
+                width: 80%;
+            }
+            .barra--busqueda{
+                padding: 7% 70% 7% 5%;
+                font-size: 14px;
+            }
+            .icono--lupa{
+                left: 155%;
+            }
+        .btn__login{
+            width: 17%;
+            font-size: 14px;
+            padding: 2%;
+        }
+    }
+
+@media screen and (max-width: 480px) {
+    .cabecera__container{
+        flex-wrap: wrap;
+    }
+    
+        .cabecera__logo{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+            .logo{
+                width: 156%;
+            }
+        .cabecera__barra-busqueda{
+            flex: 1 0 50%;
+        }
+            .barra--busqueda{
+                font-size: 19px;
+                padding: 7% 64% 7% 5%;
+                margin-bottom: 8%;
+            }
+            .icono--lupa{
+                font-size: 19px;
+                left: 140%;
+                top: 15px;
+            }
+        .btn__login{
+            flex: 1 0 50%;
+            padding: 3%;
+            font-size: 30px;
+            margin-bottom: 5%;
+        }
+
+}
 
 
 

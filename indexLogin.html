@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=yes, minimum-scale=1.0, maximum-scale=3.0, initial-scale=1.0" />
+    
+    <title>AluraGeek</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./archivos-css/reset.css">
+    <link rel="stylesheet" href="/archivos-css/bases.css">
+    <link rel="stylesheet" href="./archivos-css/cabecera.css" media="all" >
+    <link rel="stylesheet" href="./archivos-css/seccion-banner.css" media="all">
+    <link rel="stylesheet" href="./archivos-css/seccion-galeria.css" media="all">
+    <link rel="stylesheet" href="./archivos-css/seccion-contacto.css" media="all">
+    <link rel="stylesheet" href="./archivos-css/seccion-footer.css">
+</head>
+<body>
+    
+    <header class="cabecera">
+        <div class="cabecera__container">
+            <div class="cabecera__logo">
+                <a class="cabecera__inicio-pagina" href="#">
+                    <img src="./Imagenes/cabecera/Logo.png" class="logo" alt="logo">
+                </a>
+                <div class="cabecera__barra-busqueda">
+                    <input class="barra--busqueda" type="text" placeholder="¿Que desea buscar?">
+                    <i class="fa-solid fa-magnifying-glass icono--lupa"></i>
+                </div>
+            </div>
+            <button class="btn__login" >Login</button>
+        </div>
+
+    </header>
+
+    <main> 
+<!-------Inicio de Sesion---------------------------->
+        <section class="seccion__login">
+            
+            <h1 class="login__titulo">Iniciar Sesion</h1>
+            <form class="login__form">
+
+                <input class="login__form--correo" name="email" type="email" placeholder="Escriba su correo electronico" required data-tipo="email">
+                <span class="login__mensaje--error">Este campo no es valido</span>
+                
+                <input class="login__form--contrasenia" name="password" type="password" placeholder="Escriba se contraseña" required 
+                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$" title="Al menos 6 caracteres, maximo 12, debe contener una letra minuscula, uan letra mayuscula, un numero y no pede contener caracteres especiales">
+                <span class="login__mensaje--error">Este campo no es valido</span>
+                
+                <button class="login__form--btn-entrar">Entrar</button>
+    
+            </form>
+
+        </section>
+
+<!-------CONTACTO------------------------------------->        
+        <section class="seccion__contacto">
+            <div class="contacto__contenido-logo--informacion">
+                <div class="contacto__contenido--logo">
+                
+                    <a class="" href="#">
+                        <img src="./Imagenes/cabecera/Logo.png" class="logo" alt="logo">
+                    </a>
+    
+                </div>
+                
+                <div class="contacto__contenido--informacion">
+                    <a class="informacion" href="#">Quienes somos</a>
+                    <a class="informacion" href="#">Politica de privacidad</a>
+                    <a class="informacion" href="#">Programa de fidelidad</a>
+                    <a class="informacion" href="#">Nuestra Tiendas</a>
+                    <a class="informacion" href="#">Quiero ser franquiciado</a>
+                    <a class="informacion" href="#">Auncie aqui</a>
+                </div>
+            </div>
+            
+            <div class="contacto__contenido--formulario">
+                <h2 class="formulario__titulo">Hable con nosotros</h2>
+                <input class="formulario__nombre" type="text" placeholder="Nombre">
+                <textarea rows="7" class="formulario__mensaje" type="text" placeholder="Escribe tu mensaje"></textarea>
+                <button class="formulario__btn--enviar">Enviar mensaje</button>
+            </div>
+        </section>
+<!-------FOOTER--------------------------------------->
+        <footer class="seccion__footer">
+            <h2 class="footer__titulo">Desarrollado por Arguello Soledad</h2>
+            <p class="footer__fecha">2022</p>
+        </footer>
+    </main> 
+    <script scr=""></script>
+    <script src="https://kit.fontawesome.com/26f759a832.js" crossorigin="anonymous"></script>
+</body>
+</html>

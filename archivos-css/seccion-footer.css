@@ -7,5 +7,5 @@
     height: 100px;
     font-size: 22px;
     font-weight: 500;
-    color: #464646;
+    color: var(--color-gris-intenso);
 }

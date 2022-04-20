@@ -1,23 +1,20 @@
 :root {
 /*colores de fondo:*/
---background-barra-nav: #f5f5f5;
---background-boton-login: #FFFFFF;
---background-galeria: #E5E5E5;
---background-contacto: #EAF2FD;
-/*colores*/
---color-icono-lupa: #a3a3a3;
---color-textos-link: #2A7AE4;
---color-textos-banner: #FFFFFF;
---color-textos-contacto: #464646;
---color-textos-formulario: #A2A2A2;
---color-texto-btn: #FFFFFF;
+--bacground-fondo-balnco: #FFFFFF;
+--background-gris-claro: #f5f5f5;
+--background-azul-pastel: #EAF2FD;
+--background-gris-palido: #E5E5E5;
+--background-azul: #2A7AE4;
+/*colores */
+--color-gris-oscuro: #a3a3a3;
+--color-gris-preto: #f5f5f5;
+--color-azul: #2A7AE4;
+--color-blanco: #FFFFFF;
+--color-gris-intenso: #464646;
+--color-gris-palido: #A2A2A2;
 /*somras*/
---sombra-textos-banner: 6px 6px 10px rgb(0 0 0 / 30%);
-/*borde:*/
---border-color-barra-nav: #f5f5f5;
---border-color-btn-login: #2A7AE4;
-/*boton*/
---color-botones-azules: #2A7AE4;
+--sombra-textos: 6px 6px 10px rgb(0 0 0 / 30%);
+--sombra-input: 6px 6px 10px rgb( 0 0 0 /10%);
 /*fuente texto*/
 --Raleway: "Raleway", sans-serif;
 }

@@ -10,8 +10,7 @@
     <link rel="stylesheet" href="./archivos-css/reset.css">
     <link rel="stylesheet" href="/archivos-css/bases.css">
     <link rel="stylesheet" href="./archivos-css/cabecera.css" media="all" >
-    <link rel="stylesheet" href="./archivos-css/seccion-banner.css" media="all">
-    <link rel="stylesheet" href="./archivos-css/seccion-galeria.css" media="all">
+    <link rel="stylesheet" href="./archivos-css/seccion-login.css" media="all">
     <link rel="stylesheet" href="./archivos-css/seccion-contacto.css" media="all">
     <link rel="stylesheet" href="./archivos-css/seccion-footer.css">
 </head>
@@ -41,11 +40,11 @@
             <form class="login__form">
 
                 <input class="login__form--correo" name="email" type="email" placeholder="Escriba su correo electronico" required data-tipo="email">
-                <span class="login__mensaje--error">Este campo no es valido</span>
+              <!--  <span class="login__mensaje--error">Este campo no es valido</span> -->
                 
                 <input class="login__form--contrasenia" name="password" type="password" placeholder="Escriba se contraseña" required data-tipo="password"
                 pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$" title="Al menos 6 caracteres, maximo 12, debe contener una letra minuscula, uan letra mayuscula, un numero y no pede contener caracteres especiales">
-                <span class="login__mensaje--error">Este campo no es valido</span>
+                <!-- <span class="login__mensaje--error">Este campo no es valido</span> -->
                 
                 <button class="login__form--btn-entrar">Entrar</button>
     

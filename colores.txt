@@ -3,6 +3,7 @@ background-barra-nav: #f5f5f5;
 background-boton-login: #FFFFFF;
 background-galeria: #E5E5E5;
 background-contacto: #EAF2FD;
+background-login: #E5E5E5;
 
 
 -colores

@@ -15,15 +15,14 @@
             .barra--busqueda{
                 font-size: 16px;
                 font-weight: 400;
-                background-color: var(--background-barra-nav);
-                border: 1px;
+                background-color: var(--background-gris-claro);
+                border: none;
                 border-radius: 60px;
-                border-color: var(--border-color-barra-nav);
                 padding: 6% 100% 6% 5%;
             }
             .icono--lupa{
                 font-size: 16px;
-                color: var(--color-icono-lupa);
+                color: var(--color-gris-oscuro);
                 position: absolute;
                 left: 190%;
                 top: 10px;
@@ -31,11 +30,11 @@
     .btn__login{
         width: 15%;
         padding: 1%;
-        border: 1px solid var(--border-color-btn-login);
+        border: 1px solid var(--color-azul);
         font-size: 16px;
         font-weight: 600;
-        color: var(--color-textos-link);
-        background-color: var(--background-boton-login);
+        color: var(--color-azul);
+        background-color: var(--background-fondo-blanco);
     }
     .btn__login:hover{
         cursor: pointer;

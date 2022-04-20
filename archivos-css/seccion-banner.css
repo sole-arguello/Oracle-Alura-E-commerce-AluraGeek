@@ -20,22 +20,22 @@
         .banner__titulo{
             font-size: 52px;
             font-weight: 700;
-            color: var(--color-textos-banner);
+            color: var(--color-blanco);
             margin-bottom: 2%;
-            text-shadow: var(--sombra-textos-banner);
+            text-shadow: var(--sombra-textos);
         }
         .banner__texto{
             font-size: 22px;
             font-weight: 700;
-            color: var(--color-textos-banner);
+            color: var(--color-blanco);
             margin-bottom: 2%;
         }
         .banner__btn--cosolas{
             width: 10vw;
             font-size: 16px;
             font-weight: 400; 
-            color: var(--color-textos-banner);
-            background-color: var(--color-botones-azules);
+            color: var(--color-blanco);
+            background-color: var(--color-azul);
             padding: 1.5%;
             margin-top: 10px;
             border: none;           
@@ -59,7 +59,7 @@
     }
     .banner__texto{
         font-size: 3.1vw;
-        text-shadow: 6px 6px 10px rgb(0 0 0 / 30%);
+        text-shadow: var(--sombra-textos);
     }
 
     .banner__btn--cosolas{

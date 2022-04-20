@@ -43,7 +43,7 @@
                 <input class="login__form--correo" name="email" type="email" placeholder="Escriba su correo electronico" required data-tipo="email">
                 <span class="login__mensaje--error">Este campo no es valido</span>
                 
-                <input class="login__form--contrasenia" name="password" type="password" placeholder="Escriba se contraseña" required 
+                <input class="login__form--contrasenia" name="password" type="password" placeholder="Escriba se contraseña" required data-tipo="password"
                 pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$" title="Al menos 6 caracteres, maximo 12, debe contener una letra minuscula, uan letra mayuscula, un numero y no pede contener caracteres especiales">
                 <span class="login__mensaje--error">Este campo no es valido</span>
                 
@@ -87,7 +87,8 @@
             <p class="footer__fecha">2022</p>
         </footer>
     </main> 
-    <script scr=""></script>
+    
     <script src="https://kit.fontawesome.com/26f759a832.js" crossorigin="anonymous"></script>
+    <script scr="./archivos-js/app.js" type="module"></script>
 </body>
 </html>

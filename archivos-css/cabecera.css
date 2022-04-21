@@ -29,8 +29,10 @@
             }
     .btn__login{
         width: 15%;
-        padding: 1%;
+        padding: 2%;
         border: 1px solid var(--color-azul);
+        text-decoration: none;
+        text-align: center;
         font-size: 16px;
         font-weight: 600;
         color: var(--color-azul);

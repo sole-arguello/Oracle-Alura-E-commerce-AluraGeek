@@ -12,6 +12,8 @@ export function valida(input){
         input.parentElement.querySelector(".login__mensaje--error").innerHtml = mostrarMensajeDeError(tipoDeInput, input);
     }
 }
+
+
 const tipoDeErrores = [
     "valueMissing",
     "typeMismatch",
@@ -38,6 +40,8 @@ function mostrarMensajeDeError(tipoDeInput, input){
     });
     return mensaje;
 }
+
+
 /*
 const validadores = {
     email: (input) => validarEmail(input),

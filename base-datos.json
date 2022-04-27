@@ -1,0 +1,165 @@
+{
+    "categorias": [
+        {
+            "categoria": "starwars",
+            "productos": [
+                {
+                    "id": "1",
+                    "nombre": "Producto XYZ",
+                    "precio": "$60",
+                    "imagen": "foto1.png",
+                    "categoria": "starwars"
+                },
+
+                {
+                    "id": "2",
+                    "nombre": "Producto XYZ",
+                    "precio": "$60",
+                    "imagen": "foto2.png",
+                    "categoria": "starwars"
+                },
+                    
+                {
+                    "id": "3",
+                    "nombre": "Producto XYZ",
+                    "precio": "$60",
+                    "imagen": "foto3.png",
+                    "categoria": "starwars" 
+                },
+        
+                {
+                    "id": "4",
+                    "nombre": "Producto XYZ",
+                    "precio": "$60",
+                    "imagen": "foto4.png",
+                    "categoria": "starwars" 
+                },
+        
+                {
+                    "id": "5",
+                    "nombre": "Producto XYZ",
+                    "precio": "$60",
+                    "imagen": "foto5.png",
+                    "categoria": "starwars" 
+                },
+        
+                {
+                    "id": "6",
+                    "nombre": "Producto XYZ",
+                    "precio": "$60",
+                    "imagen": "foto6.png",
+                    "categoria": "starwars" 
+                }
+            ]
+           
+        },
+
+        {
+            "categoria": "consolas",
+            "productos": [
+                {
+                    "id": "1",
+                    "nombre": "Producto XYZ",
+                    "precio": "$60",
+                    "imagen": "foto1.png",
+                    "categoria": "consolas"
+                },
+
+                {
+                    "id": "2",
+                    "nombre": "Control y consolas XYZ",
+                    "precio": "$60",
+                    "imagen": "foto2.png",
+                    "categoria": "consolas"
+                },
+                    
+                {
+                    "id": "3",
+                    "nombre": "Consolas XYZ",
+                    "precio": "$60",
+                    "imagen": "foto3.png",
+                    "categoria": "consolas" 
+                },
+        
+                {
+                    "id": "4",
+                    "nombre": "Control XYZ",
+                    "precio": "$60",
+                    "imagen": "foto4.png",
+                    "categoria": "consolas" 
+                },
+        
+                {
+                    "id": "5",
+                    "nombre": "Consolas XYZ",
+                    "precio": "$60",
+                    "imagen": "foto5.png",
+                    "categoria": "consolas" 
+                },
+        
+                {
+                    "id": "6",
+                    "nombre": "Game Boy Color",
+                    "precio": "$60",
+                    "imagen": "foto6.png",
+                    "categoria": "consolas" 
+                }
+            ]
+           
+        },
+
+        {
+            "categoria": "diversos",
+            "productos": [
+                {
+                    "id": "1",
+                    "nombre": "Camisa Atari",
+                    "precio": "$60",
+                    "imagen": "foto1.png",
+                    "categoria": "diversos"
+                },
+
+                {
+                    "id": "2",
+                    "nombre": "Camisa SNES",
+                    "precio": "$60",
+                    "imagen": "foto2.png",
+                    "categoria": "diversos"
+                },
+                    
+                {
+                    "id": "3",
+                    "nombre": "Control y consolas XYZ",
+                    "precio": "$60",
+                    "imagen": "foto3.png",
+                    "categoria": "diversos" 
+                },
+        
+                {
+                    "id": "4",
+                    "nombre": "Control y consolas XYZ",
+                    "precio": "$60",
+                    "imagen": "foto4.png",
+                    "categoria": "diversos" 
+                },
+        
+                {
+                    "id": "5",
+                    "nombre": "Control y consolas XYZ",
+                    "precio": "$60",
+                    "imagen": "foto5.png",
+                    "categoria": "diversos"
+                },
+        
+                {
+                    "id": "6",
+                    "nombre": "Producto XYZ",
+                    "precio": "$60",
+                    "imagen": "foto6.png",
+                    "categoria": "diversos" 
+                }
+            ]
+           
+        }
+    ]
+}

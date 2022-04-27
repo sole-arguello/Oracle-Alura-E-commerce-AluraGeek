@@ -1,0 +1,67 @@
+.seccion__agregar-producto{
+    background-color: var(--background-gris-claro);
+    display: flex;
+}
+    .agregar-producto__contenidoTodo{
+
+    }
+        .agregar-producto__titulo{
+
+        }
+    
+        .agregar-producto__caontenido-imagen-btn{
+            display: flex;
+            justify-content: center;
+        }
+            .agregar-producto__contenido--imagen-arrastre{
+                width: 301px;
+                height: 152px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                border: 1px dashed var(--color-gris-preto30);         
+                box-sizing: border-box;
+            }
+                .agregar-producto__img-tablet{
+                    width: 32px;
+                    height: 32px;
+                    margin-bottom: 15px;
+                }
+                .agregar-producto__img-movil{
+                    display: none;
+                }
+                .agregar-producto__texto{
+                    color: var(--color-gris-intenso);
+                }
+            .agregar-producto__imagen-letra{
+                width: 2%;
+                height: 2%;
+            }
+            .agregar-producto__btn--buquedaImagen{
+                width: 197px;
+                height: 19px;
+                font-size: 16px;
+                font-weight: 400;
+                color: var(--color-azul);
+                border: 1px solid var(--color-azul);
+                padding: 2%;
+            }
+            .agregar-producto__form{
+
+            }
+                .agregar-producto__form--producto{
+
+                }
+                .agregar-producto__form--precio{
+
+                }
+                .agregar-producto__form--descripcion{
+
+                }
+                .agregar-producto__form--btn-agregar{
+
+                }
+
+

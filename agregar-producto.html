@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=yes, minimum-scale=1.0, maximum-scale=3.0, initial-scale=1.0" />
+    
+    <title>AluraGeek</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="./archivos-css/reset.css">
+    <link rel="stylesheet" href="/archivos-css/bases.css">
+    <link rel="stylesheet" href="./archivos-css/cabecera.css" media="all" >
+    <link rel="stylesheet" href="./archivos-css/agragar-producto.css" media="all">
+    <link rel="stylesheet" href="./archivos-css/seccion-contacto.css" media="all">
+    <link rel="stylesheet" href="./archivos-css/seccion-footer.css">
+</head>
+<body>
+    
+    <header class="cabecera">
+        <div class="cabecera__container">
+            <div class="cabecera__logo">
+                <a class="cabecera__inicio-pagina" href="index.html">
+                    <img src="./Imagenes/cabecera/Logo.png" class="logo" alt="logo">
+                </a>
+                <div class="cabecera__barra-busqueda">
+                    <input class="barra--busqueda" type="text" placeholder="¿Que desea buscar?">
+                    <i class="fa-solid fa-magnifying-glass icono--lupa"></i>
+                </div>
+            </div>
+            <a class="btn__login" href="login.html" target="_blank">Login</a>
+        </div>
+
+    </header>
+
+    <main>
+        <section class="seccion__agregar-producto">
+            <div class="agregar-producto__contenidoTodo">
+
+                <h2 class="agregar-producto__titulo">Agregar nuevo producto</h2>
+
+                <div class="agregar-producto__caontenido-imagen-btn">
+                    <div class="agregar-producto__contenido--imagen-arrastre">
+                        <img class="agregar-producto__img-tablet" src="./Imagenes/agregar-productos/agregar-prod.png" alt="imagen agrgar">
+                        <img class="agregar-producto__img-movil" src="./Imagenes/agregar-productos/agregar-movil.png" alt="imagen agregar">
+                        <p class="agregar-producto__texto">Arrastre para agregar una imagen al producto</p>
+                    </div>
+                    
+                    <img class="agregar-producto__imagen-letra" src="./Imagenes/agregar-productos/O.png" alt="imagen letra letra--O">
+                    <a class="agregar-producto__btn--buquedaImagen">Busque en su computador</a>
+                </div>
+
+                <form class="agregar-producto__form">
+                    <input class="agregar-producto__form--producto" type="text" placeholder="Nombre del producto" maxlength="">
+                    <input class="agregar-producto__form--precio" type="" placeholder="Precio del producto" maxlength="8">
+                    <textarea rows="7" class="agregar-producto__form--descripcion" type="text" placeholder="Descripcion del producto" maxlength="120"></textarea>
+                    <button class="agregar-producto__form--btn-agregar" type="submit">Agregar producto</button>
+                </form>
+ 
+            </div>
+        </section>
+ <!-------CONTACTO------------------------------------->        
+        <section class="seccion__contacto">
+            <div class="contacto__contenido-logo--informacion">
+                <div class="contacto__contenido--logo">
+                
+                    <a class="" href="#">
+                        <img src="./Imagenes/cabecera/Logo.png" class="logo" alt="logo">
+                    </a>
+    
+                </div>
+                
+                <div class="contacto__contenido--informacion">
+                    <a class="informacion" href="#">Quienes somos</a>
+                    <a class="informacion" href="#">Politica de privacidad</a>
+                    <a class="informacion" href="#">Programa de fidelidad</a>
+                    <a class="informacion" href="#">Nuestra Tiendas</a>
+                    <a class="informacion" href="#">Quiero ser franquiciado</a>
+                    <a class="informacion" href="#">Auncie aqui</a>
+                </div>
+            </div>
+            
+            <div class="contacto__contenido--formulario">
+                <h2 class="formulario__titulo">Hable con nosotros</h2>
+                <input class="formulario__nombre" type="text" placeholder="Nombre" maxlength="40">
+                <textarea rows="7" class="formulario__mensaje" type="text" placeholder="Escribe tu mensaje" maxlength="120"></textarea>
+                <button class="formulario__btn--enviar">Enviar mensaje</button>
+            </div>
+        </section>
+<!-------FOOTER--------------------------------------->
+        <footer class="seccion__footer">
+            <h2 class="footer__titulo">Desarrollado por Arguello Soledad</h2>
+            <p class="footer__fecha">2022</p>
+        </footer>
+    </main> 
+
+    <script src="https://kit.fontawesome.com/26f759a832.js" crossorigin="anonymous"></script>
+    <script scr="./archivos-js/app.js" type="module"></script>
+</body>
+</html>

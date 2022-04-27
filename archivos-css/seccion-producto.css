@@ -1,13 +1,18 @@
+.producto__seleccionado{
+    background-color: var(--background-gris-claro);
+    padding: 5% 0;
+}
+
 .producto__a__seleccionar{
     width: 100%;
     display: flex;
-    background-color: var(--background-gris-claro);
+    
 }
     .producto__selec-contenido{
         width: 100%;
         display: flex;
         align-items: center;
-        padding: 5%;
+        padding: 0 5%;
     }
         .producto__selec-contenido--img{
             width: 100%;
@@ -21,7 +26,7 @@
         .producto__selec-contenido--descripcion{
             display: flex;
             flex-direction: column;
-            width: 40%;
+            width: 100%;
             padding: 0 2%;
             color: var(--color-gris-intenso);
         }

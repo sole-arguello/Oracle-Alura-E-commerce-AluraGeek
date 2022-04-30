@@ -35,7 +35,7 @@ const productoNombre = document.getElementById("nombre");
 const productoPrecio = document.getElementById("precio");
 const productoDescripcion = document.getElementById("descripcion");
 
-const rutaImagenes = "/imagenes/galeria-productos";
+const rutaImagenes = "./imagenes/galeria-productos";
 productoImagen.setAttribute("src", rutaImagenes + verProducto.imagen);
 productoNombre.textContent = verProducto.nombre;
 productoPrecio.textContent = verProducto.precio;

@@ -30,13 +30,13 @@ base_de_datos.forEach(categorias => {
 
 //construyo la seccion del producto seleccionado
 
-const productoImagen = document.getElementById("img");
-const productoNombre = document.getElementById('nombre');
+const productoImagen = document.getElementById("imagen");
+const productoNombre = document.getElementById("nombre");
 const productoPrecio = document.getElementById("precio");
 const productoDescripcion = document.getElementById("descripcion");
 
-//const rutaImagenes = "";
-//productoImagen.setAttribute("src", ruta + verProducto.imagen);
+const rutaImagenes = "/imagenes/galeria-productos";
+productoImagen.setAttribute("src", rutaImagenes + verProducto.imagen);
 productoNombre.textContent = verProducto.nombre;
 productoPrecio.textContent = verProducto.precio;
 productoDescripcion.textContent = verProducto.descripcion;
@@ -56,61 +56,62 @@ base_de_datos.forEach(categorias => {
 
 //construyo el html de similares
 
-const producto_similares = document.getElementById("producto_Similares");
-productosSimilares.forEach(produc => {
+const producto_similares = document.getElementById("contenido__menu");
+productosSimilares.forEach(prod => {
 
     const productoContenido = document.createElement("div");
     productoContenido.innerHTML = `
-    <div class="contenido__menu">
+    
         <ul class="productos__menu">
             <li class="productos__lista">
                 <img class="productos__img" src="" > 
-                <p class="producto__descripcion">${nombre}</p>
-                <p class="producto__precio">${precio}</p>
+                <p class="producto__descripcion">${prod.nombre}</p>
+                <p class="producto__precio">${prod.precio}</p>
                 <a class="producto__link" href="./productos.html?id_producto=st1">Ver producto</a>
             </li>
             
             <li class="productos__lista">
                 <img class="productos__img" src=""> 
-                <p class="producto__descripcion">${nombre}</p>
-                <p class="producto__precio">${precio}</p>
+                <p class="producto__descripcion">${prod.nombre}</p>
+                <p class="producto__precio">${prod.precio}</p>
                 <a class="producto__link" href="./productos.html?id_producto=st2">Ver producto</a>
             </li>
             
             <li class="productos__lista">
                 <img class="productos__img" src=""> 
-                <p class="producto__descripcion">${nombre}</p>
-                <p class="producto__precio">${precio}</p>
+                <p class="producto__descripcion">${prod.nombre}</p>
+                <p class="producto__precio">${prod.precio}</p>
                 <a class="producto__link" href="./productos.html?id_producto=st3">Ver producto</a>
             </li>
 
             <li class="productos__lista">
                 <img class="productos__img" src=""> 
-                <p class="producto__descripcion">${nombre}</p>
-                <p class="producto__precio">${precio}</p>
+                <p class="producto__descripcion">${prod.nombre}</p>
+                <p class="producto__precio">${prod.precio}</p>
                 <a class="producto__link" href="./productos.html?id_producto=st4">Ver producto</a>
             </li>
 
             <li class="productos__lista">
                 <img class="productos__img" src=""> 
-                <p class="producto__descripcion">${nombre}</p>
-                <p class="producto__precio">${precio}</p>
+                <p class="producto__descripcion">${prod.nombre}</p>
+                <p class="producto__precio">${prod.precio}</p>
                 
                 <a class="producto__link" href="./productos.html?id_producto=st5">Ver producto</a>
             </li>
 
                 <li class="productos__lista">
-                    <img class="productos__img" src="${imagen}"> 
-                    <p class="producto__descripcion">${nombre}</p>
-                    <p class="producto__precio">${precio}</p>
+                    <img class="productos__img" src=""> 
+                    <p class="producto__descripcion">${prod.nombre}</p>
+                    <p class="producto__precio">${prod.precio}</p>
                     <a class="producto__link" href="./productos.html?id_producto=st6S">Ver producto</a>
                 </li>
             </ul>
 
-        </div>
         `;
         producto_similares.appendChild(productoContenido);
 });
+
+
 
 
 

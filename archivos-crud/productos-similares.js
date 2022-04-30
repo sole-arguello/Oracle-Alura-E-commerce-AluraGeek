@@ -15,7 +15,7 @@ base_de_datos.forEach(categorias => {
 
 //construyo el html de similares
 
-const producto_similares = document.getElementById("producto_Similares");
+const producto_similares = document.getElementById("contenido__menu");
 productosSimilares.forEach(produc => {
 
     const productoContenido = document.createElement("div");

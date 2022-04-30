@@ -41,19 +41,15 @@
                 <div class="producto__selec-contenido">
     
                     <div class="producto__selec-contenido--img">
-                        <img class="producto__selec-img" src="Imagenes/star ward/foto1.png">
+                        <img id="imagen" class="producto__selec-img">
                     </div>
                         
                     <div class="producto__selec-contenido--descripcion">
-                        <p class="producto__selec--titulo">Producto XYZ</p>
-                        <p class="producto__selec--precio">$ 60,00</p>
-                        <p class="producto__selec--detalle">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                            Cumque animi ab quos magnam, perferendis rem illum consectetur tenetur veritatis, itaque accusamus. 
-                            Quae neque voluptas delectus omnis maxime similique natus veniam cupiditate, doloremque minima sed quisquam.
-                            Ad animi architecto impedit nostrum aut officia tempora dolorem soluta
-                        </p>
+                        <p id="nombre" class="producto__selec--titulo"></p>
+                        <p id="precio" class="producto__selec--precio"></p>
+                        <p id="descripcion" class="producto__selec--detalle"></p>
                     </div>
-    
+                 
                 </div>
             </seccion>
     <!---->
@@ -63,35 +59,35 @@
                     <div class="contenido__titulo">
                         <h2 class="productos__titulo">Productos Similares</h2>
                     </div>
-    
+    <!--
                     <div class="contenido__menu">
                         <ul class="productos__menu">
                             <li class="productos__lista">
                                 <img class="productos__img" src="Imagenes/star ward/foto1.png"> 
                                 <p class="producto__descripcion">Producto XYZ</p>
                                 <p class="producto__precio">$ 60,00</p>
-                                <a class="producto__link" href="">Ver producto</a>
+                                <a class="producto__link" href="./productos.html?id_producto=st1">Ver producto</a>
                             </li>
             
                             <li class="productos__lista">
                                 <img class="productos__img" src="Imagenes/star ward/foto2.png"> 
                                 <p class="producto__descripcion">Producto XYZ</p>
                                 <p class="producto__precio">$ 60,00</p>
-                                <a class="producto__link" href="">Ver producto</a>
+                                <a class="producto__link" href="./productos.html?id_producto=st2">Ver producto</a>
                             </li>
             
                             <li class="productos__lista">
                                 <img class="productos__img" src="Imagenes/star ward/foto3.png"> 
                                 <p class="producto__descripcion">Producto XYZ</p>
                                 <p class="producto__precio">$ 60,00</p>
-                                <a class="producto__link" href="">Ver producto</a>
+                                <a class="producto__link" href="./productos.html?id_producto=st3">Ver producto</a>
                             </li>
             
                             <li class="productos__lista">
                                 <img class="productos__img" src="Imagenes/star ward/foto4.png"> 
                                 <p class="producto__descripcion">Producto XYZ</p>
                                 <p class="producto__precio">$ 60,00</p>
-                                <a class="producto__link" href="">Ver producto</a>
+                                <a class="producto__link" href="./productos.html?id_producto=st4">Ver producto</a>
                             </li>
             
                             <li class="productos__lista">
@@ -99,19 +95,19 @@
                                 <p class="producto__descripcion">Producto XYZ</p>
                                 <p class="producto__precio">$ 60,00</p>
                                 
-                                <a class="producto__link" href="">Ver producto</a>
+                                <a class="producto__link" href="./productos.html?id_producto=st5">Ver producto</a>
                             </li>
             
                             <li class="productos__lista">
                                 <img class="productos__img" src="Imagenes/star ward/foto6.png"> 
                                 <p class="producto__descripcion">Producto XYZ</p>
                                 <p class="producto__precio">$ 60,00</p>
-                                <a class="producto__link" href="">Ver producto</a>
+                                <a class="producto__link" href="./productos.html?id_producto=st6S">Ver producto</a>
                             </li>
                         </ul>
             
                     </div>
-                    
+                -->
                 </div>
             </section>
     
@@ -125,6 +121,7 @@
     </main> 
 
     <script src="https://kit.fontawesome.com/26f759a832.js" crossorigin="anonymous"></script>
-    <script scr="./archivos-js/app.js" type="module"></script>
+    
+    <script type="module" src="./archivos-crud/ver-productos.js"></script>
 </body>
 </html>

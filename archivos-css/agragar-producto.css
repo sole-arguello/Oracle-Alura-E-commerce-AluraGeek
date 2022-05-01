@@ -1,17 +1,27 @@
 .seccion__agregar-producto{
     background-color: var(--background-gris-claro);
     display: flex;
+    justify-content: center;
+    padding: 5% 0;
 }
     .agregar-producto__contenidoTodo{
+        display: flex;
+        flex-direction: column;
+        
 
     }
         .agregar-producto__titulo{
-
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 20px;
         }
     
         .agregar-producto__caontenido-imagen-btn{
             display: flex;
-            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            width: 100%;
+            padding: 0 0 6% 0;
         }
             .agregar-producto__contenido--imagen-arrastre{
                 width: 301px;
@@ -37,10 +47,10 @@
                 }
             .agregar-producto__imagen-letra{
                 width: 2%;
-                height: 2%;
+                height: 12%;
             }
             .agregar-producto__btn--buquedaImagen{
-                width: 197px;
+                width: 205px;
                 height: 19px;
                 font-size: 16px;
                 font-weight: 400;
@@ -50,18 +60,53 @@
             }
             .agregar-producto__form{
 
+                display: flex;
+                flex-direction: column;
             }
-                .agregar-producto__form--producto{
-
-                }
+                .agregar-producto__form--producto,
                 .agregar-producto__form--precio{
 
+                   width: 559px;
+                   height: 56px;
+                   color: var(--color-gris-palido);
+                   font-size: 12px;
+                   font-weight: 400;
+                   border: none;
+                   border-radius: 4px;
+                   margin-bottom: 15px;
+                   box-sizing: border-box;
+                   padding: 0 0 0 2%;
+                   box-shadow: var(--sombra-input);
                 }
+
                 .agregar-producto__form--descripcion{
 
+                    width: 559px;
+                    height: 82px;
+                    resize: none;
+                    border-radius: 4px;
+                    border: none;
+                    box-sizing: border-box;
+                    margin-bottom: 15px;
+                    padding: 2% 0 0 2%;
+                    box-shadow: var(--sombra-input);
                 }
                 .agregar-producto__form--btn-agregar{
-
+                    width: 559px;
+                    height: 51px;
+                    font-size: 16px;
+                    color: var(--color-blanco);
+                    background-color: var(--color-azul);
+                    border: none;
                 }
 
 
+@media screen and (max-width: 768px) {
+
+
+}
+
+@media screen and (max-width: 480px) {
+
+    
+}

@@ -52,60 +52,21 @@ base_de_datos.forEach(categorias => {
         productosSimilares = categorias.producto;
     }
 });
-//console.log(productosSimilares);
+console.log(productosSimilares);
 
 //construyo el html de similares
 
 const producto_similares = document.getElementById("producto_similares");
 productosSimilares.forEach(prod => {
 
-    const productoContenido = document.createElement("div");
+    const productoContenido = document.createElement("li");
+    productoContenido.classList.add("productos__lista");
     productoContenido.innerHTML = `
-    
-        <ul class="productos__menu">
-            <li class="productos__lista">
-                <img class="productos__img" src="${prod.imagen}" > 
-                <p class="producto__descripcion">${prod.nombre}</p>
-                <p class="producto__precio">${prod.precio}</p>
-                <a class="producto__link" href="./productos.html?id_producto=st1">Ver producto</a>
-            </li>
-            
-            <li class="productos__lista">
-                <img class="productos__img" src="${prod.imagen}"> 
-                <p class="producto__descripcion">${prod.nombre}</p>
-                <p class="producto__precio">${prod.precio}</p>
-                <a class="producto__link" href="./productos.html?id_producto=st2">Ver producto</a>
-            </li>
-            
-            <li class="productos__lista">
-                <img class="productos__img" src="${prod.imagen}"> 
-                <p class="producto__descripcion">${prod.nombre}</p>
-                <p class="producto__precio">${prod.precio}</p>
-                <a class="producto__link" href="./productos.html?id_producto=st3">Ver producto</a>
-            </li>
-
-            <li class="productos__lista">
-                <img class="productos__img" src="${prod.imagen}"> 
-                <p class="producto__descripcion">${prod.nombre}</p>
-                <p class="producto__precio">${prod.precio}</p>
-                <a class="producto__link" href="./productos.html?id_producto=st4">Ver producto</a>
-            </li>
-
-            <li class="productos__lista">
-                <img class="productos__img" src="${prod.imagen}"> 
-                <p class="producto__descripcion">${prod.nombre}</p>
-                <p class="producto__precio">${prod.precio}</p>
-                
-                <a class="producto__link" href="./productos.html?id_producto=st5">Ver producto</a>
-            </li>
-
-                <li class="productos__lista">
-                    <img class="productos__img" src="${prod.imagen}"> 
-                    <p class="producto__descripcion">${prod.nombre}</p>
-                    <p class="producto__precio">${prod.precio}</p>
-                    <a class="producto__link" href="./productos.html?id_producto=st6S">Ver producto</a>
-                </li>
-            </ul>
+         
+        <img class="productos__img" src="${rutaImagenes}${prod.imagen}">
+        <p class="producto__descripcion">${prod.nombre}</p>
+        <p class="producto__precio">${prod.precio}</p>
+        <a class="producto__link" href="./productos.html?id_producto=${prod.id}">Ver producto</a>
 
         `;
         producto_similares.appendChild(productoContenido);

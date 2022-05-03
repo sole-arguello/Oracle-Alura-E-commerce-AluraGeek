@@ -75,5 +75,3 @@ productosSimilares.forEach(prod => {
 
 
 
-
-

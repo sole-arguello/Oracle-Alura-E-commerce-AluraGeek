@@ -1,5 +1,5 @@
 {
-    "db.json": [
+    "archivojson": [
         {
             "categoria": "starwars",
             "productos": [
@@ -7,7 +7,7 @@
                     "id": "st1",
                     "nombre": "Producto XYZ",
                     "precio": "$60",
-                    "imagen": "foto1.png",
+                    "imagen": "starWars1.png",
                     "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque animi ab quos magnam, perferendis rem illum consectetur tenetur veritatis, itaque accusamus. Quae neque voluptas delectus omnis maxime similique natus veniam cupiditate, doloremque minima sed quisquam. Ad animi architecto impedit nostrum aut officia tempora dolorem soluta",
                     "categoria": "starwars"
                 },
@@ -16,7 +16,7 @@
                     "id": "st2",
                     "nombre": "Producto XYZ",
                     "precio": "$60",
-                    "imagen": "foto2.png",
+                    "imagen": "starWars2.png",
                     "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque animi ab quos magnam, perferendis rem illum consectetur tenetur veritatis, itaque accusamus. Quae neque voluptas delectus omnis maxime similique natus veniam cupiditate, doloremque minima sed quisquam. Ad animi architecto impedit nostrum aut officia tempora dolorem soluta",
                     "categoria": "starwars"
                 },
@@ -25,7 +25,7 @@
                     "id": "st3",
                     "nombre": "Producto XYZ",
                     "precio": "$60",
-                    "imagen": "foto3.png",
+                    "imagen": "starWars3.png",
                     "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque animi ab quos magnam, perferendis rem illum consectetur tenetur veritatis, itaque accusamus. Quae neque voluptas delectus omnis maxime similique natus veniam cupiditate, doloremque minima sed quisquam. Ad animi architecto impedit nostrum aut officia tempora dolorem soluta",
                     "categoria": "starwars" 
                 },
@@ -34,7 +34,7 @@
                     "id": "st4",
                     "nombre": "Producto XYZ",
                     "precio": "$60",
-                    "imagen": "foto4.png",
+                    "imagen": "starWars4.png",
                     "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque animi ab quos magnam, perferendis rem illum consectetur tenetur veritatis, itaque accusamus. Quae neque voluptas delectus omnis maxime similique natus veniam cupiditate, doloremque minima sed quisquam. Ad animi architecto impedit nostrum aut officia tempora dolorem soluta",
                     "categoria": "starwars" 
                 },
@@ -43,7 +43,7 @@
                     "id": "st5",
                     "nombre": "Producto XYZ",
                     "precio": "$60",
-                    "imagen": "foto5.png",
+                    "imagen": "starWars5.png",
                     "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque animi ab quos magnam, perferendis rem illum consectetur tenetur veritatis, itaque accusamus. Quae neque voluptas delectus omnis maxime similique natus veniam cupiditate, doloremque minima sed quisquam. Ad animi architecto impedit nostrum aut officia tempora dolorem soluta",
                     "categoria": "starwars" 
                 },
@@ -52,7 +52,7 @@
                     "id": "st6",
                     "nombre": "Producto XYZ",
                     "precio": "$60",
-                    "imagen": "foto6.png",
+                    "imagen": "starWars6.png",
                     "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque animi ab quos magnam, perferendis rem illum consectetur tenetur veritatis, itaque accusamus. Quae neque voluptas delectus omnis maxime similique natus veniam cupiditate, doloremque minima sed quisquam. Ad animi architecto impedit nostrum aut officia tempora dolorem soluta",
                     "categoria": "starwars" 
                 }
@@ -67,7 +67,7 @@
                     "id": "co1",
                     "nombre": "Producto XYZ",
                     "precio": "$60",
-                    "imagen": "foto1.png",
+                    "imagen": "consolas1.png",
                     "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque animi ab quos magnam, perferendis rem illum consectetur tenetur veritatis, itaque accusamus. Quae neque voluptas delectus omnis maxime similique natus veniam cupiditate, doloremque minima sed quisquam. Ad animi architecto impedit nostrum aut officia tempora dolorem soluta",
                     "categoria": "consolas"
                 },
@@ -76,7 +76,7 @@
                     "id": "co2",
                     "nombre": "Control y consolas XYZ",
                     "precio": "$60",
-                    "imagen": "foto2.png",
+                    "imagen": "consolas2.png",
                     "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque animi ab quos magnam, perferendis rem illum consectetur tenetur veritatis, itaque accusamus. Quae neque voluptas delectus omnis maxime similique natus veniam cupiditate, doloremque minima sed quisquam. Ad animi architecto impedit nostrum aut officia tempora dolorem soluta",
                     "categoria": "consolas"
                 },
@@ -85,7 +85,7 @@
                     "id": "co3",
                     "nombre": "Consolas XYZ",
                     "precio": "$60",
-                    "imagen": "foto3.png",
+                    "imagen": "consolas3.png",
                     "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque animi ab quos magnam, perferendis rem illum consectetur tenetur veritatis, itaque accusamus. Quae neque voluptas delectus omnis maxime similique natus veniam cupiditate, doloremque minima sed quisquam. Ad animi architecto impedit nostrum aut officia tempora dolorem soluta",
                     "categoria": "consolas" 
                 },
@@ -94,7 +94,7 @@
                     "id": "co4",
                     "nombre": "Control XYZ",
                     "precio": "$60",
-                    "imagen": "foto4.png",
+                    "imagen": "consolas4.png",
                     "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque animi ab quos magnam, perferendis rem illum consectetur tenetur veritatis, itaque accusamus. Quae neque voluptas delectus omnis maxime similique natus veniam cupiditate, doloremque minima sed quisquam. Ad animi architecto impedit nostrum aut officia tempora dolorem soluta",
                     "categoria": "consolas" 
                 },
@@ -103,7 +103,7 @@
                     "id": "co5",
                     "nombre": "Consolas XYZ",
                     "precio": "$60",
-                    "imagen": "foto5.png",
+                    "imagen": "consolas5.png",
                     "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque animi ab quos magnam, perferendis rem illum consectetur tenetur veritatis, itaque accusamus. Quae neque voluptas delectus omnis maxime similique natus veniam cupiditate, doloremque minima sed quisquam. Ad animi architecto impedit nostrum aut officia tempora dolorem soluta",
                     "categoria": "consolas" 
                 },
@@ -112,7 +112,7 @@
                     "id": "co6",
                     "nombre": "Game Boy Color",
                     "precio": "$60",
-                    "imagen": "foto6.png",
+                    "imagen": "consolas6.png",
                     "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque animi ab quos magnam, perferendis rem illum consectetur tenetur veritatis, itaque accusamus. Quae neque voluptas delectus omnis maxime similique natus veniam cupiditate, doloremque minima sed quisquam. Ad animi architecto impedit nostrum aut officia tempora dolorem soluta",
                     "categoria": "consolas" 
                 }
@@ -127,7 +127,7 @@
                     "id": "di1",
                     "nombre": "Camisa Atari",
                     "precio": "$60",
-                    "imagen": "foto1.png",
+                    "imagen": "diversos1.png",
                     "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque animi ab quos magnam, perferendis rem illum consectetur tenetur veritatis, itaque accusamus. Quae neque voluptas delectus omnis maxime similique natus veniam cupiditate, doloremque minima sed quisquam. Ad animi architecto impedit nostrum aut officia tempora dolorem soluta",
                     "categoria": "diversos"
                 },
@@ -136,7 +136,7 @@
                     "id": "di2",
                     "nombre": "Camisa SNES",
                     "precio": "$60",
-                    "imagen": "foto2.png",
+                    "imagen": "diversos2.png",
                     "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque animi ab quos magnam, perferendis rem illum consectetur tenetur veritatis, itaque accusamus. Quae neque voluptas delectus omnis maxime similique natus veniam cupiditate, doloremque minima sed quisquam. Ad animi architecto impedit nostrum aut officia tempora dolorem soluta",
                     "categoria": "diversos"
                 },
@@ -145,7 +145,7 @@
                     "id": "di3",
                     "nombre": "Control y consolas XYZ",
                     "precio": "$60",
-                    "imagen": "foto3.png",
+                    "imagen": "diversos3.png",
                     "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque animi ab quos magnam, perferendis rem illum consectetur tenetur veritatis, itaque accusamus. Quae neque voluptas delectus omnis maxime similique natus veniam cupiditate, doloremque minima sed quisquam. Ad animi architecto impedit nostrum aut officia tempora dolorem soluta",
                     "categoria": "diversos" 
                 },
@@ -154,7 +154,7 @@
                     "id": "di4",
                     "nombre": "Control y consolas XYZ",
                     "precio": "$60",
-                    "imagen": "foto4.png",
+                    "imagen": "diversos4.png",
                     "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque animi ab quos magnam, perferendis rem illum consectetur tenetur veritatis, itaque accusamus. Quae neque voluptas delectus omnis maxime similique natus veniam cupiditate, doloremque minima sed quisquam. Ad animi architecto impedit nostrum aut officia tempora dolorem soluta",
                     "categoria": "diversos" 
                 },
@@ -163,7 +163,7 @@
                     "id": "di5",
                     "nombre": "Control y consolas XYZ",
                     "precio": "$60",
-                    "imagen": "foto5.png",
+                    "imagen": "diversos5.png",
                     "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque animi ab quos magnam, perferendis rem illum consectetur tenetur veritatis, itaque accusamus. Quae neque voluptas delectus omnis maxime similique natus veniam cupiditate, doloremque minima sed quisquam. Ad animi architecto impedit nostrum aut officia tempora dolorem soluta",
                     "categoria": "diversos"
                 },
@@ -172,7 +172,7 @@
                     "id": "di6",
                     "nombre": "Producto XYZ",
                     "precio": "$60",
-                    "imagen": "foto6.png",
+                    "imagen": "diversos6.png",
                     "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque animi ab quos magnam, perferendis rem illum consectetur tenetur veritatis, itaque accusamus. Quae neque voluptas delectus omnis maxime similique natus veniam cupiditate, doloremque minima sed quisquam. Ad animi architecto impedit nostrum aut officia tempora dolorem soluta",
                     "categoria": "diversos" 
                 }

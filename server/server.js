@@ -1,27 +1,24 @@
-const express = require('express');// crea el srvidor
-const morgan = require('morgan');// configura las url que solicitar
-const cors = require('cors');//da los permiso al servidor 
+const express = require('express');
+const morgan = require('morgan');
+const cors = require('cors');
 
-//ruta de importacion
-const { todosLosProductos, unProducto } = require('./server/funciones');
-
-//llamo mis herramientas(librerias)
+//ruta de exportacion
+const { todosLosProductos, unProducto, productosPorCategoria} = require('./funciones-app');
 
 //inicio el serv
-const app = express();//guardo en app una coipia del serv
+const app = express();
 
-app.set('port', 3000);// set es colocar en puerto 3000
-app.set('json spaces', 2);//como quiero q construya los json
+app.set('port', 3000);
+app.set('json spaces', 2);
 
-app.use(morgan('dev'));//maneja todo las respuestas
+app.use(morgan('dev'));
 app.use(express.urlencoded({extended: false}));
 app.use(express.json());
 
-
-
 //Aqui son las ruta que voy creando(url del index) que quiero usar y hacer mis peticiones
-app.get('/productos', cors (), todosLosProductos); //recibe solo una peticion en esa ruta//general
-app.get('/productos/:id', cors(), unProducto);// :variable(id, nombre, descrp, etc) trae parametros//recibe una peticion filtrada por un valor
+app.get('/productos', cors (), todosLosProductos);//home para crear galeria
+app.get('/productos/:id', cors(), unProducto);//muestra el link ver producto
+app.get('/categorias/:nombreCategoria', cors(), productosPorCategoria);//muestra los similares de index.productos
 
 
 //iniciando el servidor, ponerlo en marcha (listen es escuchar)

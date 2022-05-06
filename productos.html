@@ -39,9 +39,9 @@
             <seccion class="producto__a__seleccionar">
             
                 <div class="producto__selec-contenido">
-    
+                    <!--Por medio dee los id relleno desde el crud los campos-->
                     <div class="producto__selec-contenido--img">
-                        <img id="imagen" class="producto__selec-img" src="">
+                        <img id="imagen" class="producto__selec-img" alt="imagen producto">
                     </div>
                         
                     <div class="producto__selec-contenido--descripcion">
@@ -59,12 +59,10 @@
                     <div class="contenido__titulo">
                         <h2 class="productos__titulo">Productos Similares</h2>
                     </div>
-                    <!--aqui se construye con el crud-->
+                    
                     <div class="contenido__menu">
                         <ul  id="producto_similares" class="productos__menu">
-                            <!--<li class="productos__lista">
-
-                            </li>-->
+                            <!--aqui se construye con el crud la galeria similares-->
                         </ul>
                     </div>
                 
@@ -82,6 +80,6 @@
 
     <script src="https://kit.fontawesome.com/26f759a832.js" crossorigin="anonymous"></script>
     
-    <script type="module" src="./archivos-crud/ver-productos.js"></script>
+    <script src="./archivos-peticiones/ver-productos.js"></script>
 </body>
 </html>

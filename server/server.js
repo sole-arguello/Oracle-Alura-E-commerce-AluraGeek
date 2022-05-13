@@ -3,7 +3,7 @@ const morgan = require('morgan');
 const cors = require('cors');
 
 //ruta de exportacion
-const { todosLosProductos, unProducto, productosPorCategoria} = require('./funciones-app');
+const { todosLosProductos, unProducto, productosPorCategoria, agregarProducto} = require('./funciones-app');
 
 //inicio el serv
 const app = express();
@@ -19,6 +19,7 @@ app.use(express.json());
 app.get('/productos', cors (), todosLosProductos);//home para crear galeria
 app.get('/productos/:id', cors(), unProducto);//muestra el link ver producto
 app.get('/categorias/:nombreCategoria', cors(), productosPorCategoria);//muestra los similares de index.productos
+app.post('/productos', cors(), agregarProducto);//index agregar productos
 
 
 //iniciando el servidor, ponerlo en marcha (listen es escuchar)

@@ -1,13 +1,15 @@
 const db = require ('./db.json');
 console.log(db.archivojson[0].productos[0].nombre);
 
+//-------- todos-productos.html-------------//
 function todosLosProductos(peticion, respuesta) {//req, res
 
-    respuesta.json(db);
+    respuesta.json(db.archivojson);
     
 }
 
-function unProducto(peticion, respuesta) {
+//-------------- productos.html----------------//
+function unProducto(peticion, respuesta) {// producto seleccionado
 
     let verProducto;
     db.archivojson.forEach( cat => {
@@ -21,7 +23,7 @@ function unProducto(peticion, respuesta) {
     
 }
 
-function productosPorCategoria(peticion, respuesta) {
+function productosPorCategoria(peticion, respuesta) {// los similares
 
     let productos;
     db.archivojson.forEach( cat => {
@@ -32,4 +34,10 @@ function productosPorCategoria(peticion, respuesta) {
     respuesta.json(productos);
     
 }
-module.exports = { todosLosProductos, unProducto, productosPorCategoria}
+
+//------------- Agregar Productos ------------------//
+
+function agregarProducto(){
+    push
+}
+module.exports = { todosLosProductos, unProducto, productosPorCategoria, agregarProducto}

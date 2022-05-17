@@ -31,14 +31,16 @@
             margin-bottom: 2%;
         }
         .banner__btn--cosolas{
-            width: 10vw;
+            width: 120px;
             font-size: 16px;
             font-weight: 400; 
             color: var(--color-blanco);
             background-color: var(--color-azul);
             padding: 1.5%;
             margin-top: 10px;
-            border: none;           
+            border: none;
+            text-align: center;
+            text-decoration: none;         
         }
         .banner__btn--cosolas:hover{
             cursor: pointer;

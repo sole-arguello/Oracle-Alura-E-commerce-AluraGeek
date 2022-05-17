@@ -35,7 +35,7 @@
     </header>
 
     <main>
-<!-----------BANNER------------------>
+        <!-----------BANNER------------------>
         <section class="seccion__banner">
             <div class="banner__contenido">
                 <div class="banner__descripcion">
@@ -46,13 +46,13 @@
             </div>
             
         </section>
-<!----------GALERIA------------------>       
+        <!----------GALERIA PRODUCTOS------------>       
         <section class="seccion__galeria">
-<!------STAR WARS------------------------------>
+
             <div class="contenido__productos">
                 <div class="contenido__titulo">
                     <h2 class="productos__titulo">Star Wars</h2>
-                    <a class="ver-todos__link" href="./todos-productos.html?productos">
+                    <a class="ver-todos__link" href="./todos-productos.html">
                         Ver todo
                     <i class="fa-solid fa-arrow-right"></i>
                     </a>
@@ -60,170 +60,44 @@
                 </div>
 
                 <div class="contenido__menu" data-star-wars>
-<!--                    <ul class="productos__menu">
-                        <li class="productos__lista">
-                            <img class="productos__img" src="./imagenes/galeria-productos/starWars1.png"> 
-                            <p class="producto__descripcion">Producto XYZ</p>
-                            <p class="producto__precio">$ 60,00</p>
-                            <a class="producto__link" href="./productos.html?id_producto=st1">Ver producto</a>
-                        </li>
-        
-                        <li class="productos__lista">
-                            <img class="productos__img" src="./imagenes/galeria-productos/starWars2.png"> 
-                            <p class="producto__descripcion">Producto XYZ</p>
-                            <p class="producto__precio">$ 60,00</p>
-                            <a class="producto__link" href="./productos.html?id_producto=st2">Ver producto</a>
-                        </li>
-        
-                        <li class="productos__lista">
-                            <img class="productos__img" src="./imagenes/galeria-productos/starWars3.png"> 
-                            <p class="producto__descripcion">Producto XYZ</p>
-                            <p class="producto__precio">$ 60,00</p>
-                            <a class="producto__link" href="./productos.html?id_producto=st3">Ver producto</a>
-                        </li>
-        
-                        <li class="productos__lista">
-                            <img class="productos__img" src="./imagenes/galeria-productos/starWars4.png"> 
-                            <p class="producto__descripcion">Producto XYZ</p>
-                            <p class="producto__precio">$ 60,00</p>
-                            <a class="producto__link" href="./productos.html?id_producto=st4">Ver producto</a>
-                        </li>
-        
-                        <li class="productos__lista">
-                            <img class="productos__img" src="./imagenes/galeria-productos/starWars5.png"> 
-                            <p class="producto__descripcion">Producto XYZ</p>
-                            <p class="producto__precio">$ 60,00</p>
-                            
-                            <a class="producto__link" href="./productos.html?id_producto=st5">Ver producto</a>
-                        </li>
-        
-                        <li class="productos__lista">
-                            <img class="productos__img" src="./imagenes/galeria-productos/starWars6.png"> 
-                            <p class="producto__descripcion">Producto XYZ</p>
-                            <p class="producto__precio">$ 60,00</p>
-                            <a class="producto__link" href="./productos.html?id_producto=st6">Ver producto</a>
-                        </li>
-                    </ul>
-                -->      
+            <!----------- productos star wars traidos del CRUD ---------------->      
                 </div>
                 
             </div>
-<!-------CONSOLAS------------------------------------->
-            <div class="contenido__productos">
+
+            <div id="consolas" class="contenido__productos">
+
                <div class="contenido__titulo">
                     <h2 class="productos__titulo">Consolas</h2>
-                    <a class="ver-todos__link" href="./todos-productos.html?productos">
+                    <a class="ver-todos__link" href="./todos-productos.html">
                         Ver todo
                     <i class="fa-solid fa-arrow-right"></i>
                     </a>
                 </div>               
-                <div class="contenido__menu">
-                    <ul class="productos__menu">
-                        <li class="productos__lista">
-                            <img class="productos__img" src="./imagenes/galeria-productos/consolas1.png"> 
-                            <p class="producto__descripcion">Producto XYZ</p>
-                            <p class="producto__precio">$ 60,00</p>
-                            <a class="producto__link" href="./productos.html?id_producto=co1">Ver producto</a>
-                        </li>
-        
-                        <li class="productos__lista">
-                            <img class="productos__img" src="./imagenes/galeria-productos/consolas2.png"> 
-                            <p class="producto__descripcion">Control y consola XYZ</p>
-                            <p class="producto__precio">$ 60,00</p>
-                            <a class="producto__link" href="./productos.html?id_producto=co2">Ver producto</a>
-                        </li>
-        
-                        <li class="productos__lista">
-                            <img class="productos__img" src="./imagenes/galeria-productos/consolas3.png"> 
-                            <p class="producto__descripcion">Consola XYZ</p>
-                            <p class="producto__precio">$ 60,00</p>
-                            <a class="producto__link" href="./productos.html?id_producto=co3">Ver producto</a>
-                        </li>
-        
-                        <li class="productos__lista">
-                            <img class="productos__img" src="./imagenes/galeria-productos/consolas4.png"> 
-                            <p class="producto__descripcion">Consola XYZ</p>
-                            <p class="producto__precio">$ 60,00</p>
-                            <a class="producto__link" href="./productos.html?id_producto=co4">Ver producto</a>
-                        </li>
-        
-                        <li class="productos__lista">
-                            <img class="productos__img" src="./imagenes/galeria-productos/consolas5.png"> 
-                            <p class="producto__descripcion">Consola XYZ</p>
-                            <p class="producto__precio">$ 60,00</p>
-                            <a class="producto__link" href="./productos.html?id_producto=co5">Ver producto</a>
-                        </li>
-        
-                        <li class="productos__lista">
-                            <img class="productos__img" src="./imagenes/galeria-productos/consolas6.png"> 
-                            <p class="producto__descripcion">Game Boy Color</p>
-                            <p class="producto__precio">$ 60,00</p>
-                            <a class="producto__link" href="./productos.html?id_producto=co6">Ver producto</a>
-                        </li>
-                    </ul>
+                <div class="contenido__menu" data-consolas>
+            <!---------- productos consolas traidos del CRUD ------------------>
                 </div>
 
             </div>
-<!-------DIVERSOS------------------------------------->
+
             <div class="contenido__productos">
+
                 <div class="contenido__titulo">
                     <h2 class="productos__titulo">Diversos</h2>
-                    <a class="ver-todos__link" href="./todos-productos.html?productos">
+                    <a class="ver-todos__link" href="./todos-productos.html">
                         Ver todo
                     <i class="fa-solid fa-arrow-right"></i>
                     </a>
                 </div>
                 
-                <div class="contenido__menu">
-                    <ul class="productos__menu">
-                        <li class="productos__lista">
-                            <img class="productos__img" src="./imagenes/galeria-productos/diversos1.png"> 
-                            <p class="producto__descripcion">Camisa Atari</p>
-                            <p class="producto__precio">$ 60,00</p>
-                            <a class="producto__link" href="./productos.html?id_producto=di1">Ver producto</a>
-                        </li>
-        
-                        <li class="productos__lista">
-                            <img class="productos__img" src="./imagenes/galeria-productos/diversos2.png"> 
-                            <p class="producto__descripcion">Camisa SNES</p>
-                            <p class="producto__precio">$ 60,00</p>
-                            <a class="producto__link" href="./productos.html?id_producto=di2">Ver producto</a>
-                        </li>
-        
-                        <li class="productos__lista">
-                            <img class="productos__img" src="./imagenes/galeria-productos/diversos3.png"> 
-                            <p class="producto__descripcion">Control y consola XYZ</p>
-                            <p class="producto__precio">$ 60,00</p>
-                            <a class="producto__link" href="./productos.html?id_producto=di3">Ver producto</a>
-                        </li>
-        
-                        <li class="productos__lista">
-                            <img class="productos__img" src="./imagenes/galeria-productos/diversos4.png"> 
-                            <p class="producto__descripcion">Control y consola XYZ</p>
-                            <p class="producto__precio">$ 60,00</p>
-                            <a class="producto__link" href="./productos.html?id_producto=di4">Ver producto</a>
-                        </li>
-        
-                        <li class="productos__lista">
-                            <img class="productos__img" src="./imagenes/galeria-productos/diversos5.png"> 
-                            <p class="producto__descripcion">Control y consola XYZ</p>
-                            <p class="producto__precio">$ 60,00</p>
-                            <a class="producto__link" href="./productos.html?id_producto=di5">Ver producto</a>
-                        </li>
-        
-                        <li class="productos__lista">
-                            <img class="productos__img" src="./imagenes/galeria-productos/diversos6.png"> 
-                            <p class="producto__descripcion">Producto XYZ</p>
-                            <p class="producto__precio">$ 60,00</p>
-                            <a class="producto__link" href="./productos.html?id_producto=di6">Ver producto</a>
-                        </li>
-                    </ul>    
+                <div class="contenido__menu" data-diversos>
+            <!---------- productos diversos traidos del CRUD ---------------->  
                 </div>
                 
             </div> 
 <!-------CONTACTO------------------------------------->   
         </section>
-<!----------CONTACTO------------------>       
+        <!----------CONTACTO------------------>       
         <section class="seccion__contacto">
             <div class="contacto__contenido-logo--informacion">
                 <div class="contacto__contenido--logo">
@@ -251,14 +125,14 @@
                 <button class="formulario__btn--enviar">Enviar mensaje</button>
             </div>
         </section>
-<!-------FOOTER--------------------------------------->
+        <!-------FOOTER--------------------------------------->
         <footer class="seccion__footer">
             <h2 class="footer__titulo">Desarrollado por Arguello Soledad</h2>
             <p class="footer__fecha">2022</p>
         </footer>
     </main> 
-<!-----SCRIPT-------------------->
+    <!-----SCRIPT-------------------->
     <script src="https://kit.fontawesome.com/26f759a832.js" crossorigin="anonymous"></script>
-    <script type="module" src="./archivos-peticiones/base-datos-json.js"></script>
+    <script type="module" src="./archivos-peticiones/crear-index-productos.js"></script>
 </body>
 </html>

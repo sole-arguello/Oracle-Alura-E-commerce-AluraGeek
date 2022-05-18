@@ -2,7 +2,7 @@
 .banner__contenido{
     display: flex;
     align-items: center;
-    background-image: url(../Imagenes/banner-image.png);
+    background-image: url(../imagenes/banner-image.png);
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;

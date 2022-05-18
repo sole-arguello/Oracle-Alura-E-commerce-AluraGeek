@@ -1,6 +1,41 @@
+import { clienteServidor } from "../services/cliente-servidor.js";
+
+//creo el producto
+const rutaImagenes = "./assets/imagenes/galeria-productos/";
+const obtenerInformacion= async () => {
+
+    const url = new URL(window.location);
+    const id = url.searchParams.get('id');
+
+    if(id === null){
+        console.log('Hubo error al momento de buscar el producto');
+    }
+
+    try{
+        const elProducto = await clienteServidor.verProducto(id);
+
+        if(elProducto.nombre && elProducto.precio && elProducto.descripcion && elProducto.imagen){
+            const infoProducto = document.querySelector('[data-productos]');
+
+            infoProducto.innerHTML = `
+            <div class="producto__selec-contenido--img">
+                <img class="producto__selec-img" src="${elProducto.imagen}" alt="imagen producto">
+            </div>
+            
+            <div class="producto__selec-contenido--descripcion">
+                <p class="producto__selec--titulo">${elProducto.nombre}</p>
+                <p class="producto__selec--precio">${elProducto.precio}</p>
+                <p class="producto__selec--detalle">${elProducto.descripcion}</p>
+            </div>
+            `
+            return infoProducto;
+        }
+    }
+}
+obtenerInformacion();
 
 
-// direccciono los links de ver producto
+/*
 const urlVerProducto = window.location.search;
 
 const verProductos = new URLSearchParams(urlVerProducto);
@@ -23,6 +58,7 @@ function actualizarProducto(elProducto){
     productoPrecio.textContent = elProducto.precio;
     productoDescripcion.textContent = elProducto.descripcion;
 };
+
 //--- aqui hago la peticion al servidor de los productos(carpeta server)------
 const urlProducto = `http://localhost:3000/productos/${id_producto}`;
 fetch(urlProducto)
@@ -44,7 +80,7 @@ function mostrarProductosSimilares(productosSimilares){
         <img class="productos__img" src="${rutaImagenes}${prod.imagen}">
         <p class="producto__descripcion">${prod.nombre}</p>
         <p class="producto__precio">${prod.precio}</p>
-        <a class="producto__link" href="./productos.html?id_producto=${prod.id}">Ver producto</a>
+        <a class="producto__link" href="./productos.html?id=${prod.id}">Ver producto</a>
 
         `;
         producto_similares.appendChild(productoContenido);
@@ -60,6 +96,4 @@ function pedirCategoria(categoriaProducto){
     .then( data => { mostrarProductosSimilares(data); } )// data es un json
     .catch( err => { console.log(err)});
 
-}
-
-
+}*/

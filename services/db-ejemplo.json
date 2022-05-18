@@ -1,0 +1,168 @@
+
+
+{
+    "productos":[ 
+        {
+            "id": "st1",
+            "nombre": "Producto XYZ",
+            "precio": "$60",
+            "imagen": "https://i.ibb.co/ydRhHsL/producto-1.png",
+            "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque animi ab quos magnam, perferendis rem illum consectetur tenetur veritatis, itaque accusamus. Quae neque voluptas delectus omnis maxime similique natus veniam cupiditate, doloremque minima sed quisquam. Ad animi architecto impedit nostrum aut officia tempora dolorem soluta",
+            "categoria": "Star wars"
+        },
+
+        {
+            "id": "st2",
+            "nombre": "Producto XYZ",
+            "precio": "$60",
+            "imagen": "https://i.ibb.co/35bTz5c/producto-2.png",
+            "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque animi ab quos magnam, perferendis rem illum consectetur tenetur veritatis, itaque accusamus. Quae neque voluptas delectus omnis maxime similique natus veniam cupiditate, doloremque minima sed quisquam. Ad animi architecto impedit nostrum aut officia tempora dolorem soluta",
+            "categoria": "Star wars"
+        },
+            
+        {
+            "id": "st3",
+            "nombre": "Producto XYZ",
+            "precio": "$60",
+            "imagen": "https://i.ibb.co/1TybsXT/producto-3.png",
+            "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque animi ab quos magnam, perferendis rem illum consectetur tenetur veritatis, itaque accusamus. Quae neque voluptas delectus omnis maxime similique natus veniam cupiditate, doloremque minima sed quisquam. Ad animi architecto impedit nostrum aut officia tempora dolorem soluta",
+            "categoria": "Star wars" 
+        },
+
+        {
+            "id": "st4",
+            "nombre": "Producto XYZ",
+            "precio": "$60",
+            "imagen": "https://i.ibb.co/C1VKkRC/producto-4.png",
+            "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque animi ab quos magnam, perferendis rem illum consectetur tenetur veritatis, itaque accusamus. Quae neque voluptas delectus omnis maxime similique natus veniam cupiditate, doloremque minima sed quisquam. Ad animi architecto impedit nostrum aut officia tempora dolorem soluta",
+            "categoria": "Star wars" 
+        },
+
+        {
+            "id": "st5",
+            "nombre": "Producto XYZ",
+            "precio": "$60",
+            "imagen": "https://i.ibb.co/SrSD1fz/consola-5.png",
+            "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque animi ab quos magnam, perferendis rem illum consectetur tenetur veritatis, itaque accusamus. Quae neque voluptas delectus omnis maxime similique natus veniam cupiditate, doloremque minima sed quisquam. Ad animi architecto impedit nostrum aut officia tempora dolorem soluta",
+            "categoria": "Star wars" 
+        },
+
+        {
+            "id": "st6",
+            "nombre": "Producto XYZ",
+            "precio": "$60",
+            "imagen": "https://i.ibb.co/VjsTyxm/producto-6.png",
+            "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque animi ab quos magnam, perferendis rem illum consectetur tenetur veritatis, itaque accusamus. Quae neque voluptas delectus omnis maxime similique natus veniam cupiditate, doloremque minima sed quisquam. Ad animi architecto impedit nostrum aut officia tempora dolorem soluta",
+            "categoria": "Star wars" 
+        },
+
+        {
+            "id": "co1",
+            "nombre": "Producto XYZ",
+            "precio": "$60",
+            "imagen": "https://i.ibb.co/WyzMJtC/consola-1.png",
+            "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque animi ab quos magnam, perferendis rem illum consectetur tenetur veritatis, itaque accusamus. Quae neque voluptas delectus omnis maxime similique natus veniam cupiditate, doloremque minima sed quisquam. Ad animi architecto impedit nostrum aut officia tempora dolorem soluta",
+            "categoria": "Consolas"
+        },
+
+        {
+            "id": "co2",
+            "nombre": "Control y consolas XYZ",
+            "precio": "$60",
+            "imagen": "https://i.ibb.co/0BpJthg/consola-2.png",
+            "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque animi ab quos magnam, perferendis rem illum consectetur tenetur veritatis, itaque accusamus. Quae neque voluptas delectus omnis maxime similique natus veniam cupiditate, doloremque minima sed quisquam. Ad animi architecto impedit nostrum aut officia tempora dolorem soluta",
+            "categoria": "Consolas"
+        },
+            
+        {
+            "id": "co3",
+            "nombre": "Consolas XYZ",
+            "precio": "$60",
+            "imagen": "https://i.ibb.co/JQjVwYX/consola-3.png",
+            "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque animi ab quos magnam, perferendis rem illum consectetur tenetur veritatis, itaque accusamus. Quae neque voluptas delectus omnis maxime similique natus veniam cupiditate, doloremque minima sed quisquam. Ad animi architecto impedit nostrum aut officia tempora dolorem soluta",
+            "categoria": "Consolas" 
+        },
+
+        {
+            "id": "co4",
+            "nombre": "Control XYZ",
+            "precio": "$60",
+            "imagen": "https://i.ibb.co/b3xr74X/consola-4.png",
+            "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque animi ab quos magnam, perferendis rem illum consectetur tenetur veritatis, itaque accusamus. Quae neque voluptas delectus omnis maxime similique natus veniam cupiditate, doloremque minima sed quisquam. Ad animi architecto impedit nostrum aut officia tempora dolorem soluta",
+            "categoria": "Consolas" 
+        },
+
+        {
+            "id": "co5",
+            "nombre": "Consolas XYZ",
+            "precio": "$60",
+            "imagen": "https://i.ibb.co/SrSD1fz/consola-5.png",
+            "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque animi ab quos magnam, perferendis rem illum consectetur tenetur veritatis, itaque accusamus. Quae neque voluptas delectus omnis maxime similique natus veniam cupiditate, doloremque minima sed quisquam. Ad animi architecto impedit nostrum aut officia tempora dolorem soluta",
+            "categoria": "Consolas" 
+        },
+
+        {
+            "id": "co6",
+            "nombre": "Game Boy Color",
+            "precio": "$60",
+            "imagen": "https://i.ibb.co/SX5xWzC/consola-6.png",
+            "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque animi ab quos magnam, perferendis rem illum consectetur tenetur veritatis, itaque accusamus. Quae neque voluptas delectus omnis maxime similique natus veniam cupiditate, doloremque minima sed quisquam. Ad animi architecto impedit nostrum aut officia tempora dolorem soluta",
+            "categoria": "Consolas" 
+        },
+
+
+        {
+            "id": "di1",
+            "nombre": "Camisa Atari",
+            "precio": "$60",
+            "imagen": "https://i.ibb.co/B3V2KrM/diversos-1.png",
+            "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque animi ab quos magnam, perferendis rem illum consectetur tenetur veritatis, itaque accusamus. Quae neque voluptas delectus omnis maxime similique natus veniam cupiditate, doloremque minima sed quisquam. Ad animi architecto impedit nostrum aut officia tempora dolorem soluta",
+            "categoria": "Diversos"
+        },
+
+        {
+            "id": "di2",
+            "nombre": "Camisa SNES",
+            "precio": "$60",
+            "imagen": "https://i.ibb.co/r2L7LDq/diversos-2.png",
+            "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque animi ab quos magnam, perferendis rem illum consectetur tenetur veritatis, itaque accusamus. Quae neque voluptas delectus omnis maxime similique natus veniam cupiditate, doloremque minima sed quisquam. Ad animi architecto impedit nostrum aut officia tempora dolorem soluta",
+            "categoria": "Diversos"
+        },
+            
+        {
+            "id": "di3",
+            "nombre": "Control y consolas XYZ",
+            "precio": "$60",
+            "imagen": "https://i.ibb.co/NxfKpVZ/diversos-3.png",
+            "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque animi ab quos magnam, perferendis rem illum consectetur tenetur veritatis, itaque accusamus. Quae neque voluptas delectus omnis maxime similique natus veniam cupiditate, doloremque minima sed quisquam. Ad animi architecto impedit nostrum aut officia tempora dolorem soluta",
+            "categoria": "Diversos" 
+        },
+
+        {
+            "id": "di4",
+            "nombre": "Control y consolas XYZ",
+            "precio": "$60",
+            "imagen": "https://i.ibb.co/0yzSJ50/diversos-4.png",
+            "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque animi ab quos magnam, perferendis rem illum consectetur tenetur veritatis, itaque accusamus. Quae neque voluptas delectus omnis maxime similique natus veniam cupiditate, doloremque minima sed quisquam. Ad animi architecto impedit nostrum aut officia tempora dolorem soluta",
+            "categoria": "Diversos" 
+        },
+
+        {
+            "id": "di5",
+            "nombre": "Control y consolas XYZ",
+            "precio": "$60",
+            "imagen": "https://i.ibb.co/LpY04k4/diversos-5.png",
+            "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque animi ab quos magnam, perferendis rem illum consectetur tenetur veritatis, itaque accusamus. Quae neque voluptas delectus omnis maxime similique natus veniam cupiditate, doloremque minima sed quisquam. Ad animi architecto impedit nostrum aut officia tempora dolorem soluta",
+            "categoria": "Diversos"
+        },
+
+        {
+            "id": "di6",
+            "nombre": "Producto XYZ",
+            "precio": "$60",
+            "imagen": "https://i.ibb.co/JdfLkV6/diversos-6.png",
+            "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque animi ab quos magnam, perferendis rem illum consectetur tenetur veritatis, itaque accusamus. Quae neque voluptas delectus omnis maxime similique natus veniam cupiditate, doloremque minima sed quisquam. Ad animi architecto impedit nostrum aut officia tempora dolorem soluta",
+            "categoria": "Diversos" 
+        }
+    ]
+}

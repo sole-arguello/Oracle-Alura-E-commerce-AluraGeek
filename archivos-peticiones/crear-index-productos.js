@@ -4,14 +4,14 @@ import { clienteServidor } from "../services/cliente-servidor.js";
 const rutaImagenes = './imagenes/galeria-productos';
 const mostarCardProductos = (nombre, precio, descripcion, imagen, id, categoria) => {
     //creo el ul que guarda todo el card
-    const cardProducto = document.createElement('ul');
+    const cardProducto = document.createElement('div');
     cardProducto.classList.add('productos__menu');
     cardProducto.innerHTML = `
-        <li class="productos__lista">
+    <li class="productos__lista">
         <img class="productos__img" src="${imagen}">
         <p class="producto__descripcion">${nombre}</p>
         <p class="producto__precio">${precio}</p>
-        <a class="producto__link" href="./productos.html?id=${id}">Ver producto</a>
+        <a class="producto__link" href="../screens/ver-productos.html?id=${id}"">Ver producto</a>
       </li>
     `
     return cardProducto;

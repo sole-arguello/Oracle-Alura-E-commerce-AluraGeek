@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=yes, minimum-scale=1.0, maximum-scale=3.0, initial-scale=1.0" />
+    
+    <title>AluraGeek</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="../assets/archivos-css/reset.css">
+    <link rel="stylesheet" href="../assets/archivos-css/bases.css">
+    <link rel="stylesheet" href="../assets/archivos-css/cabecera.css" media="all" >
+    <link rel="stylesheet" href="../assets/archivos-css/seccion-galeria.css" media="all">
+    <link rel="stylesheet" href="../assets/archivos-css/seccion-producto.css" media="all">
+    <link rel="stylesheet" href="../assets/archivos-css/seccion-contacto.css" media="all">
+    <link rel="stylesheet" href="../assets/archivos-css/seccion-footer.css">
+</head>
+<body>
+    
+    <header class="cabecera">
+        <div class="cabecera__container">
+            <div class="cabecera__logo">
+                <a class="cabecera__inicio-pagina" href="../index.html">
+                    <img src="../assets/imagenes/cabecera/Logo.png" class="logo" alt="logo">
+                </a>
+                <div class="cabecera__barra-busqueda">
+                    <input class="barra--busqueda" type="text" placeholder="¿Que desea buscar?">
+                    <i class="fa-solid fa-magnifying-glass icono--lupa"></i>
+                </div>
+            </div>
+            <a class="btn__login" href="login.html" target="_blank">Login</a>
+        </div>
+
+    </header>
+
+    <main>
+        <section class="producto__seleccionado">
+            <seccion class="producto__a__seleccionar">
+            
+                <div class="producto__selec-contenido" data-producto>
+                    <!--Por medio crud traigo el prudcto seleccionado-->
+                    <div class="producto__selec-contenido--img">
+                        <img class="producto__selec-img" src="../assets/imagenes/galeria-productos/starWars1.png" alt="imagen producto">
+                    </div>
+                        
+                    <div class="producto__selec-contenido--descripcion">
+                        <p class="producto__selec--titulo">hola</p>
+                        <p class="producto__selec--precio">hola2</p>
+                        <p class="producto__selec--detalle">sallsdlalalekak;s;</p>
+                    </div>
+                 
+                </div>
+            </seccion>
+    <!---->
+            <section class="seccion__galeria">
+                <div class="contenido__productos">
+    
+                    <div class="contenido__titulo">
+                        <h2 class="productos__titulo">Productos Similares</h2>
+                    </div>
+                    
+                    <div class="contenido__menu" data-productos-similares>
+                        <div  id="producto_similares" class="productos__menu" >
+                            <!--aqui se construye con el crud la galeria similares-->
+                            <li class="productos__lista">
+                                <img class="productos__img" src="./assets/imagenes/galeria-productos/starWars1.png"> 
+                                <p class="producto__descripcion">Producto XYZ</p>
+                                <p class="producto__precio">$ 60,00</p>
+                                <a class="producto__link" href="./ver-productos.html">Ver producto</a>
+                            </li>
+                        </div>
+                    </div>
+                
+                </div>
+            </section>
+    
+        </section>
+        <!----------CONTACTO------------------>       
+        <section class="seccion__contacto">
+            <div class="contacto__contenido-logo--informacion">
+                <div class="contacto__contenido--logo">
+                
+                    <a class="" href="#">
+                        <img src="../assets/imagenes/cabecera/Logo.png" class="logo" alt="logo">
+                    </a>
+    
+                </div>
+                
+                <div class="contacto__contenido--informacion">
+                    <a class="informacion" href="#">Quienes somos</a>
+                    <a class="informacion" href="#">Politica de privacidad</a>
+                    <a class="informacion" href="#">Programa de fidelidad</a>
+                    <a class="informacion" href="#">Nuestra Tiendas</a>
+                    <a class="informacion" href="#">Quiero ser franquiciado</a>
+                    <a class="informacion" href="#">Auncie aqui</a>
+                </div>
+            </div>
+            
+            <div class="contacto__contenido--formulario">
+                <h2 class="formulario__titulo">Hable con nosotros</h2>
+                <input class="formulario__nombre" type="text" placeholder="Nombre" maxlength="40">
+                <textarea rows="7" class="formulario__mensaje" type="text" placeholder="Escribe tu mensaje" maxlength="120"></textarea>
+                <button class="formulario__btn--enviar">Enviar mensaje</button>
+            </div>
+        </section>
+
+
+<!-------FOOTER--------------------------------------->
+        <footer class="seccion__footer">
+            <h2 class="footer__titulo">Desarrollado por Arguello Soledad</h2>
+            <p class="footer__fecha">2022</p>
+        </footer>
+    </main> 
+
+    <script src="https://kit.fontawesome.com/26f759a832.js" crossorigin="anonymous"></script>
+    
+    <script src="../archivos-peticiones/ver-productos.js"></script>
+</body>
+</html>

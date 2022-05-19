@@ -37,10 +37,9 @@
     <main>
         <section class="producto__seleccionado">
             <seccion class="producto__a__seleccionar">
-            
+            <!--  Por medio crud construyo y traigo el prudcto seleccionado  -->
                 <div class="producto__selec-contenido" data-producto>
-                    <!--Por medio crud traigo el prudcto seleccionado-->
-                    <div class="producto__selec-contenido--img">
+                    <!--  <div class="producto__selec-contenido--img">
                         <img class="producto__selec-img" src="../assets/imagenes/galeria-productos/starWars1.png" alt="imagen producto">
                     </div>
                         
@@ -48,9 +47,8 @@
                         <p class="producto__selec--titulo">hola</p>
                         <p class="producto__selec--precio">hola2</p>
                         <p class="producto__selec--detalle">sallsdlalalekak;s;</p>
-                    </div>
-                 
-                </div>
+                    </div>-->
+                 </div>
             </seccion>
     <!---->
             <section class="seccion__galeria">
@@ -60,15 +58,16 @@
                         <h2 class="productos__titulo">Productos Similares</h2>
                     </div>
                     
-                    <div class="contenido__menu" data-productos-similares>
-                        <div  id="producto_similares" class="productos__menu" >
-                            <!--aqui se construye con el crud la galeria similares-->
-                            <li class="productos__lista">
+                    <div class="contenido__menu">
+                        <!--aqui se construye con el crud la galeria similares-->
+                        <div  class="productos__menu" data-productos-similares>
+                            
+                            <!--<li class="productos__lista">
                                 <img class="productos__img" src="./assets/imagenes/galeria-productos/starWars1.png"> 
                                 <p class="producto__descripcion">Producto XYZ</p>
                                 <p class="producto__precio">$ 60,00</p>
                                 <a class="producto__link" href="./ver-productos.html">Ver producto</a>
-                            </li>
+                            </li>-->
                         </div>
                     </div>
                 
@@ -115,6 +114,6 @@
 
     <script src="https://kit.fontawesome.com/26f759a832.js" crossorigin="anonymous"></script>
     
-    <script src="../archivos-peticiones/ver-productos.js"></script>
+    <script type="module" src="../archivos-peticiones/ver-productos.js"></script>
 </body>
 </html>

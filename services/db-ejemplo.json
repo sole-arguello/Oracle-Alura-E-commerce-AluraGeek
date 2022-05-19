@@ -8,7 +8,7 @@
             "precio": "$60",
             "imagen": "https://i.ibb.co/ydRhHsL/producto-1.png",
             "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque animi ab quos magnam, perferendis rem illum consectetur tenetur veritatis, itaque accusamus. Quae neque voluptas delectus omnis maxime similique natus veniam cupiditate, doloremque minima sed quisquam. Ad animi architecto impedit nostrum aut officia tempora dolorem soluta",
-            "categoria": "Star wars"
+            "categoria": "Star Wars"
         },
 
         {
@@ -17,7 +17,7 @@
             "precio": "$60",
             "imagen": "https://i.ibb.co/35bTz5c/producto-2.png",
             "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque animi ab quos magnam, perferendis rem illum consectetur tenetur veritatis, itaque accusamus. Quae neque voluptas delectus omnis maxime similique natus veniam cupiditate, doloremque minima sed quisquam. Ad animi architecto impedit nostrum aut officia tempora dolorem soluta",
-            "categoria": "Star wars"
+            "categoria": "Star Wars"
         },
             
         {
@@ -26,7 +26,7 @@
             "precio": "$60",
             "imagen": "https://i.ibb.co/1TybsXT/producto-3.png",
             "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque animi ab quos magnam, perferendis rem illum consectetur tenetur veritatis, itaque accusamus. Quae neque voluptas delectus omnis maxime similique natus veniam cupiditate, doloremque minima sed quisquam. Ad animi architecto impedit nostrum aut officia tempora dolorem soluta",
-            "categoria": "Star wars" 
+            "categoria": "Star Wars" 
         },
 
         {
@@ -35,7 +35,7 @@
             "precio": "$60",
             "imagen": "https://i.ibb.co/C1VKkRC/producto-4.png",
             "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque animi ab quos magnam, perferendis rem illum consectetur tenetur veritatis, itaque accusamus. Quae neque voluptas delectus omnis maxime similique natus veniam cupiditate, doloremque minima sed quisquam. Ad animi architecto impedit nostrum aut officia tempora dolorem soluta",
-            "categoria": "Star wars" 
+            "categoria": "Star Wars" 
         },
 
         {
@@ -44,7 +44,7 @@
             "precio": "$60",
             "imagen": "https://i.ibb.co/SrSD1fz/consola-5.png",
             "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque animi ab quos magnam, perferendis rem illum consectetur tenetur veritatis, itaque accusamus. Quae neque voluptas delectus omnis maxime similique natus veniam cupiditate, doloremque minima sed quisquam. Ad animi architecto impedit nostrum aut officia tempora dolorem soluta",
-            "categoria": "Star wars" 
+            "categoria": "Star Wars" 
         },
 
         {
@@ -53,7 +53,7 @@
             "precio": "$60",
             "imagen": "https://i.ibb.co/VjsTyxm/producto-6.png",
             "descripcion": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque animi ab quos magnam, perferendis rem illum consectetur tenetur veritatis, itaque accusamus. Quae neque voluptas delectus omnis maxime similique natus veniam cupiditate, doloremque minima sed quisquam. Ad animi architecto impedit nostrum aut officia tempora dolorem soluta",
-            "categoria": "Star wars" 
+            "categoria": "Star Wars" 
         },
 
         {

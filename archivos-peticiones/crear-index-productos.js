@@ -2,7 +2,7 @@ import { clienteServidor } from "../services/cliente-servidor.js";
 
 //creo la card del producto * podria exportarla en otro archivo js*
 const rutaImagenes = './imagenes/galeria-productos';
-const mostarCardProductos = (nombre, precio, descripcion, imagen, id, categoria) => {
+export const mostarCardProductos = (nombre, precio, descripcion, imagen, id, categoria) => {
     //creo el ul que guarda todo el card
     const cardProducto = document.createElement('div');
     cardProducto.classList.add('productos__menu');
@@ -12,7 +12,7 @@ const mostarCardProductos = (nombre, precio, descripcion, imagen, id, categoria)
         <p class="producto__descripcion">${nombre}</p>
         <p class="producto__precio">${precio}</p>
         <a class="producto__link" href="../screens/ver-productos.html?id=${id}"">Ver producto</a>
-      </li>
+    </li>
     `
     return cardProducto;
 }
@@ -28,7 +28,7 @@ const productosDiversos = document.querySelector('[data-diversos]');
 clienteServidor.listaProductos().then( data => {
     data.forEach( ({ nombre, precio, descripcion, imagen, id, categoria }) => {
         //imprime datos en el index
-        if(categoria === "Star wars"){
+        if(categoria === "Star Wars"){
             const seccionProductos = mostarCardProductos(nombre, precio, descripcion, imagen, id, categoria);
             productosStarWars.appendChild(seccionProductos);
         } else if(categoria === "Consolas"){

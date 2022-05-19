@@ -1,30 +1,17 @@
+import { clienteServidor } from "../services/cliente-servidor.js";
+//creo la card del producto
+import { mostarCardProductos } from "./crear-Index-productos.js";
 
-const rutaImagenes = "./imagenes/galeria-productos/";
-function mostrartodosLosProductos(todosLosProductos){
+//capturo la seccion para mostrar los productos
+const LosProductos = document.querySelector('[data-todos-los-producto]');
 
-    const todos = document.getElementById("todos_los_productos");
+//recorro los datos
+clienteServidor.listaProductos().then(data => {
+    data.forEach(({nombre, precio, descripcion, imagen, id, categoria}) => {
+        
+        const todosProductos = mostarCardProductos(nombre, precio, descripcion, imagen, id, categoria);
+        //imprimo los datos en el index todos-productos.html
+        LosProductos.appendChild(todosProductos);
 
-    todosLosProductos.forEach(categ =>{
-        categ.productos.forEach(prod =>{
-            const listaTodos= document.createElement("li");
-            listaTodos.classList.add("productos__card");
-            listaTodos.innerHTML = `
-            
-                <img class="productos__img" src="${rutaImagenes}${prod.imagen}"> 
-                <p class="producto__descripcion">${prod.nombre}</p>
-                <p class="producto__precio">${prod.precio}</p>
-                <a class="producto__link" href="./productos.html?id_producto=${prod.id}">Ver producto</a>
-            
-            
-            `;
-            todos.appendChild(listaTodos);
-        });      
-	});
-    
-}
-
-const urlTodosProd= `http://localhost:3000/productos`;
-fetch(urlTodosProd)
-.then( res => { return res.json() } )
-.then( data => {mostrartodosLosProductos(data); })
-.catch (err => { console.log(err)});
+    });
+}).catch(error => alert('Ocurrio un error'));

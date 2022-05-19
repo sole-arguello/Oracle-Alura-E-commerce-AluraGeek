@@ -35,7 +35,7 @@
         padding-top: 30px;
         
     }
-        .productos__card{
+        .productos__card{/*es el div que contiene un li del crud*/
             list-style: none;
             line-height: 1.8;
             width: 15.5%;

@@ -1,21 +1,7 @@
 import { clienteServidor } from "../services/cliente-servidor.js";
 
-//creo la card del producto * podria exportarla en otro archivo js*
-const rutaImagenes = '..assets/imagenes/galeria-productos';
-export const mostarCardProductos = (nombre, precio, descripcion, imagen, id, categoria) => {
-    //creo el ul que guarda todo el card
-    const cardProducto = document.createElement('div');
-    cardProducto.classList.add('productos__menu');
-    cardProducto.innerHTML = `
-    <li class="productos__lista">
-        <img class="productos__img" src="${imagen}">
-        <p class="producto__descripcion">${nombre}</p>
-        <p class="producto__precio">${precio}</p>
-        <a class="producto__link" href="../screens/ver-productos.html?id=${id}">Ver producto</a>
-    </li>
-    `
-    return cardProducto;
-}
+//creo las card de productos
+import { mostarCardProductos } from "./mostrar-productos.js";
 
 //creo las secciones productos del home
 
@@ -45,5 +31,5 @@ clienteServidor.listaProductos().then( data => {
 
         }
     });
-});
+}).catch (error => alert('Ocurrio un error'));
 

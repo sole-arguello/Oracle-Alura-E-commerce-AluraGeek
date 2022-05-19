@@ -11,7 +11,7 @@ export const mostarCardProductos = (nombre, precio, descripcion, imagen, id, cat
         <img class="productos__img" src="${imagen}">
         <p class="producto__descripcion">${nombre}</p>
         <p class="producto__precio">${precio}</p>
-        <a class="producto__link" href="../screens/ver-productos.html?id=${id}"">Ver producto</a>
+        <a class="producto__link" href="../screens/ver-productos.html?id=${id}">Ver producto</a>
     </li>
     `
     return cardProducto;
@@ -28,15 +28,21 @@ const productosDiversos = document.querySelector('[data-diversos]');
 clienteServidor.listaProductos().then( data => {
     data.forEach( ({ nombre, precio, descripcion, imagen, id, categoria }) => {
         //imprime datos en el index
-        if(categoria === "Star Wars"){
+        if(categoria === 'Star Wars'){
+
             const seccionProductos = mostarCardProductos(nombre, precio, descripcion, imagen, id, categoria);
             productosStarWars.appendChild(seccionProductos);
-        } else if(categoria === "Consolas"){
+
+        } else if(categoria === 'Consolas'){
+
             const seccionProductos = mostarCardProductos(nombre, precio, descripcion, imagen, id, categoria);
             productosConsolas.appendChild(seccionProductos);
-        } else if (categoria === "Diversos"){
+
+        } else if (categoria === 'Diversos'){
+
             const seccionProductos = mostarCardProductos(nombre, precio, descripcion, imagen, id, categoria);
             productosDiversos.appendChild(seccionProductos);
+
         }
     });
 });

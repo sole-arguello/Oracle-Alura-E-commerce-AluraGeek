@@ -59,7 +59,7 @@ const verElPoducto = async () => {
             clienteServidor.listaProductos().then( data => {
                 data.forEach(({nombre, precio, imagen, id, categoria}) => {
 
-                    if(categoria === 'Star wars' && categSeleccionada === 'Star wars' && idProductoSeleccionado != id){
+                    if(categoria === 'Star Wars' && categSeleccionada === 'Star Wars' && idProductoSeleccionado != id){
                         //llamo la funcion que muestra las card y las agrego en la seccion mostrar similares
                         const productoClick = mostrarProductosSimilares(nombre, precio, id, imagen);
                         mostrarSimilares.appendChild(productoClick);

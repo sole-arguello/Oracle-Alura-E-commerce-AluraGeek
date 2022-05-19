@@ -1,4 +1,5 @@
 import { clienteServidor } from "../services/cliente-servidor.js";
+
 //creo la card del producto
 import { mostarCardProductos } from "./crear-Index-productos.js";
 
@@ -7,7 +8,7 @@ const LosProductos = document.querySelector('[data-todos-los-producto]');
 
 //recorro los datos
 clienteServidor.listaProductos().then(data => {
-    console.log(data)
+    
     data.forEach(({nombre, precio, descripcion, imagen, id, categoria}) => {
         
         const todosProductos = mostarCardProductos(nombre, precio, descripcion, imagen, id, categoria);

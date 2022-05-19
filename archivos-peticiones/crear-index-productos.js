@@ -1,7 +1,7 @@
 import { clienteServidor } from "../services/cliente-servidor.js";
 
 //creo la card del producto * podria exportarla en otro archivo js*
-const rutaImagenes = './imagenes/galeria-productos';
+const rutaImagenes = '..assets/imagenes/galeria-productos';
 export const mostarCardProductos = (nombre, precio, descripcion, imagen, id, categoria) => {
     //creo el ul que guarda todo el card
     const cardProducto = document.createElement('div');

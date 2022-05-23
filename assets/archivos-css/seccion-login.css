@@ -18,7 +18,7 @@
         .login__form--correo,
         .login__form--contrasenia{
             background-color: var(--bacground-fondo-balnco);
-            color: var(--background-gris-palido);
+            color: var(--color-gris-oscuro);
             box-shadow: var(--sombra-input);
             margin-bottom: 20px;
             border: none;
@@ -30,12 +30,14 @@
         }
         .login__form--btn-entrar{
             width: 450px;
-            height: 62px;
+            height: 40px;
             background-color: var(--background-azul);
             color: var(--color-blanco);
-            border: none;
-            font-size: 18px;
-            font-weight: 600;
+            font-size: 22px;
+            font-weight: 400;
+            text-align: center;
+            text-decoration: none;
+            padding-top: 20px;
         }
         .login__form--btn-entrar{
             cursor: pointer;
@@ -52,5 +54,6 @@
         }
         .login__form--btn-entrar{
             width: 109px;
+            font-size: 18px;
         }
 }

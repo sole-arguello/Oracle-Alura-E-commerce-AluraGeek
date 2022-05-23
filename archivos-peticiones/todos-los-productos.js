@@ -9,9 +9,9 @@ const LosProductos = document.querySelector('[data-todos-los-productos]');
 //recorro los datos
 clienteServidor.listaProductos().then(data => {
     
-    data.forEach(({nombre, precio, descripcion, imagen, id, categoria}) => {
+    data.forEach(({id,nombre, precio, imagen, descripcion, categoria}) => {
         
-        const todosProductos = mostrarCardTodas(nombre, precio, descripcion, imagen, id, categoria);
+        const todosProductos = mostrarCardTodas(id,nombre, precio, imagen, descripcion, categoria);
         //imprimo los datos en el index todos-productos.html
         LosProductos.appendChild(todosProductos);
 

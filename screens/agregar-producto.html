@@ -8,59 +8,96 @@
     <title>AluraGeek</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">  
-    <link rel="stylesheet" href="./archivos-css/reset.css">
-    <link rel="stylesheet" href="./archivos-css/bases.css">
-    <link rel="stylesheet" href="./archivos-css/cabecera.css" media="all" >
-    <link rel="stylesheet" href="./archivos-css/agragar-producto.css" media="all">
-    <link rel="stylesheet" href="./archivos-css/seccion-contacto.css" media="all">
-    <link rel="stylesheet" href="./archivos-css/seccion-footer.css">
+    <link rel="stylesheet" href="../assets/archivos-css/reset.css">
+    <link rel="stylesheet" href="../assets/archivos-css/bases.css">
+    <link rel="stylesheet" href="../assets/archivos-css/cabecera.css" media="all" >
+    <link rel="stylesheet" href="../assets/archivos-css/agragar-producto.css" media="all">
+    <link rel="stylesheet" href="../assets/archivos-css/seccion-contacto.css" media="all">
+    <link rel="stylesheet" href="../assets/archivos-css/seccion-footer.css">
 </head>
 <body>
     
     <header class="cabecera">
         <div class="cabecera__container">
             <div class="cabecera__logo">
-                <a class="cabecera__inicio-pagina" href="index.html">
-                    <img src="./imagenes/cabecera/Logo.png" class="logo" alt="logo">
+                <a class="cabecera__inicio-pagina" href="../index.html">
+                    <img src="../assets/imagenes/cabecera/Logo.png" class="logo" alt="logo">
                 </a>
                 <div class="cabecera__barra-busqueda">
                     <input class="barra--busqueda" type="text" placeholder="¿Que desea buscar?">
                     <i class="fa-solid fa-magnifying-glass icono--lupa"></i>
                 </div>
             </div>
-            <a class="btn__login" href="login.html" target="_blank">Login</a>
+            <a class="btn__login" href="./login.html" target="_blank">Login</a>
         </div>
 
     </header>
 
     <main>
         <section class="seccion__agregar-producto">
+ 
+            <h2 class="agregar-producto__titulo">Agregar nuevo producto</h2>
+
+
+            <div class="agregar-producto__agregar-imagen-btn">
+                
+                <div class="agregar-producto__agregar-imagen-arrastre" data-agregar-img>
+                    <img class="agregar-producto__img-tablet" src="../assets/imagenes/agregar-productos/agregar-prod.png" alt="imagen agrgar">
+                    <img class="agregar-producto__img-movil" src="../assets/imagenes/agregar-productos/agregar-movil.png" alt="imagen agregar">
+                    <p class="agregar-producto__texto" data-text>Arrastre para agregar una imagen al producto</p>
+                </div>
+                    
+                <img class="agregar-producto__imagen-letra" src="../assets/imagenes/agregar-productos/O.png" alt="imagen letra letra--O">
+                    
+                <a class="agregar-producto__btn--buquedaImagen" data-btn>Busque en su computador</a>
+                <input type="file" hidden data-input>
+            
+            </div>
+
+<!--
             <div class="agregar-producto__contenidoTodo">
 
                 <h2 class="agregar-producto__titulo">Agregar nuevo producto</h2>
 
-                <div class="agregar-producto__caontenido-imagen-btn">
-                    <div class="agregar-producto__contenido--imagen-arrastre">
-                        <img class="agregar-producto__img-tablet" src="./imagenes/agregar-productos/agregar-prod.png" alt="imagen agrgar">
-                        <img class="agregar-producto__img-movil" src="./imagenes/agregar-productos/agregar-movil.png" alt="imagen agregar">
-                        <p class="agregar-producto__texto">Arrastre para agregar una imagen al producto</p>
-                    </div>
+                <div class="agregar-producto__agregar-imagen" data-arrastrar-img>
+                    <div class="agregar-producto icon"><i class="fas fa-cloud-upload-alt"></i></div>
+    
+                    <header class="agregar-producto__texto" data-text>El arcvivo esta FUERA del area de colocacion</header>
                     
-                    <img class="agregar-producto__imagen-letra" src="./imagenes/agregar-productos/O.png" alt="imagen letra letra--O">
-                    <a class="agregar-producto__btn--buquedaImagen">Busque en su computador</a>
-                </div>
+                    <span>O</span>
 
-                <form class="agregar-producto__form">
-                    <input id="nombre-producto" class="agregar-producto__form--producto" type="text" placeholder="Nombre del producto" maxlength="" required data-nombre>
-                    <span class="input-mensaje-error">Este campo es requerido</span>
-                    <input class="agregar-producto__form--precio" type="" placeholder="Precio del producto" maxlength="8" required>
-                    <span class="input-mensaje-error">Este campo es requerido</span>
-                    <textarea rows="7" class="agregar-producto__form--descripcion" type="text" placeholder="Descripcion del producto" maxlength="120" required></textarea>
-                    <span class="input-mensaje-error">Este campo es requerido</span>
-                    <button id="data-form" type="submit" class="agregar-producto__form--btn-agregar" >Agregar producto</button>
-                </form>
+                    <button class="agregar-producto__btn-buscar-img" data-btn>Busque en su computador</button>
+                
+                    <input type="file" hidden data-input>
+                </div>
+            -->
+
+            <form class="agregar-producto__form" data-form-agregar>
+
+                <input class="agregar-producto__form--producto" type="text" placeholder="Nombre del producto" maxlength="" required data-nombre>
+                <span hidden class="input-mensaje-error">Este campo es requerido</span>
  
-            </div>
+                <input class="agregar-producto__form--precio" type="text" placeholder="Precio del producto" maxlength="8" required data-precio>
+                <span hidden class="input-mensaje-error">Este campo es requerido</span>
+
+                <div class="agregar-producto__cont-categorias">
+                    <p>Categoria</p>
+                    <select class="selec-cat" data-categ>
+                        <option >Elija una Categoria</opcion>
+                        <option>Star Wars</option>
+                        <option>Consolas</option>
+                        <option>Diversos</option>
+                    </select>
+                </div>                   
+                    
+                <textarea rows="7" class="agregar-producto__form--descripcion" type="text" placeholder="Descripcion del producto" maxlength="120" required data-descr></textarea>
+                <span class="input-mensaje-error">Este campo es requerido</span>
+
+                <button type="submit" class="agregar-producto__form--btn-agregar" data-btn-agregar>Agregar producto</button>
+
+                <!--<input type="submit" hidden data-btn-agregar>-->
+            </form>
+
         </section>
  <!-------CONTACTO------------------------------------->        
         <section class="seccion__contacto">
@@ -68,7 +105,7 @@
                 <div class="contacto__contenido--logo">
                 
                     <a class="" href="#">
-                        <img src="./imagenes/cabecera/Logo.png" class="logo" alt="logo">
+                        <img src="../assets/imagenes/cabecera/Logo.png" class="logo" alt="logo">
                     </a>
     
                 </div>
@@ -83,7 +120,7 @@
                 </div>
             </div>
             
-            <div class="contacto__contenido--formulario">
+            <div class="contacto__contenido--formulario" >
                 <h2 class="formulario__titulo">Hable con nosotros</h2>
                 <input class="formulario__nombre" type="text" placeholder="Nombre" maxlength="40">
                 <textarea rows="7" class="formulario__mensaje" type="text" placeholder="Escribe tu mensaje" maxlength="120"></textarea>
@@ -98,7 +135,10 @@
     </main> 
 
     <script src="https://kit.fontawesome.com/26f759a832.js" crossorigin="anonymous"></script>
-    <script src="./archivos-peticiones/agregar-producto.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>    
+    <script src="../archivos-peticiones/agregar-producto-img.js"></script>
+    <script type="module" src="../archivos-peticiones/agregar-producto.js"></script>
     
 </body>
 </html>

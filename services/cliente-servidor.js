@@ -13,11 +13,23 @@ const verProducto = async (id) => {
     .then(respuesta => respuesta.json());
 };
 
-
+//creo producto que es utilizado en agregar producto
+const crearProducto = (nombre, precio, imagen, descripcion, categoria) => {
+    return fetch(url, {
+      method: "POST",               // data puede ser string o un objeto
+      body: JSON.stringify({id:uuid.v4(),nombre, precio, imagen, descripcion, categoria}),
+      headers: {
+        "Content-Type": "application/json"// Y le decimos que los datos se enviaran como JSON
+      }
+     
+    });
+};
+ 
 
 export const clienteServidor = {
     listaProductos,
     verProducto,
+    crearProducto,
 }
 
 

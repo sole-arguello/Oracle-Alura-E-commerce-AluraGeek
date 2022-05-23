@@ -1,10 +1,10 @@
 
 //creo la card del productos index.html
 const rutaImagenes = '..assets/imagenes/galeria-productos';
-export const mostarCardProductos = (nombre, precio, descripcion, imagen, id, categoria) => {
+export const mostrarCardProductos = (id,nombre, precio, imagen, descripcion, categoria) => {
     //creo el ul que guarda todo el card
-    const cardProducto = document.createElement('li');
-    cardProducto.classList.add('productos__lista');
+    const cardProducto = document.createElement('div');
+    cardProducto.classList.add('productos__menu');
     cardProducto.innerHTML = `
     <li class="productos__lista">
         <img class="productos__img" src="${imagen}">
@@ -18,7 +18,7 @@ export const mostarCardProductos = (nombre, precio, descripcion, imagen, id, cat
 
 //creo la card de productos de todos-productos.html
 
-export const mostrarCardTodas = (nombre, precio, descripcion, imagen, id, categoria) => {
+export const mostrarCardTodas = (id,nombre, precio, imagen, descripcion, categoria) => {
 
     const todasLasCard = document.createElement('div');
     todasLasCard.classList.add('productos__card');

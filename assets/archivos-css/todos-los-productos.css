@@ -17,14 +17,17 @@
             font-weight: 700;
             color: var(--color-gris-intenso);
         }
+        /*este css aplica al todos los productos editable*/
         .todos-los-productos__btn{
-            width: 15vw;
+            width: 10vw;
             font-size: 16px;
             font-weight: 400;
+            padding: 1.5%;
+            text-align: center;
             color: var(--color-blanco);
             background-color: var(--background-azul);
-            border: none;
-            padding: 1.5%;
+            text-decoration: none;
+            cursor: pointer;
         }
 
 
@@ -41,7 +44,28 @@
             width: 15.5%;
             padding-bottom: 30px;
         }
-    
+
+/* aplica a productos.editables.html*/
+
+    .productos__card--editable{
+        display: flex;
+        flex-direction: column;
+        
+    }
+        .productos___editables_iconos{
+            position: absolute;
+            margin-left: 140px;
+            margin-top: 10px;
+        }
+            .productos__editables-icon{
+                font-size: 20px;
+                color: var(--color-blanco);
+                cursor: pointer;
+            }
+            .delete{
+                margin-right: 10px;
+            }
+/*-----------------------------------------*/  
 
 @media screen and (max-width: 768px) {
         .todos-los-productos__btn {
@@ -49,6 +73,9 @@
         }
         .productos__card{
             width: 33.33%;
+        }
+        .productos___editables_iconos{
+            margin-left: 170px;
         }
         
 
@@ -69,6 +96,10 @@
     }
     .productos__card{
         width: 50%;
+    }
+    .productos___editables_iconos{
+        margin-left: 170px;
+        margin-top: 10px;
     }
 
 }

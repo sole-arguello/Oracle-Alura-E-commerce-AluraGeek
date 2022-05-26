@@ -47,7 +47,7 @@ formAgregarProd.addEventListener('submit', event => {
       timer: 1500
     });
     setTimeout(function(){
-      window.location.href = '../screens/productos-editables.html';
+      window.location.href = '../screens/todos-productos.html';
     }, 2000);
 
   });

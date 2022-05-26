@@ -1,19 +1,19 @@
 //conexion 
 const url = 'https://local-host-ecommerce.herokuapp.com/productos';
 
-//------- comienza el crud -----------//
+//------- COMIENZA EL CRUD -----------//
 
-//todos los productos
+//todos los productos (editables.html y no editables.html y similares.html)
 const listaProductos = () => fetch(url)
 .then( respuesta => respuesta.json());
 
-//ver producto por id
+//ver producto por id ver-producto.html
 const verProducto = async (id) => {
     return fetch(`https://local-host-ecommerce.herokuapp.com/productos/${id}`)
     .then(respuesta => respuesta.json());
 };
 
-//creo producto que es utilizado en agregar producto
+//-------------Crud de Crear ----------//creo producto que es utilizado en agregar-producto.html con agregar-img.js y agregar-prod.js
 const crearProducto = (nombre, precio, imagen, descripcion, categoria) => {
     return fetch(url, {
       method: "POST",               // data puede ser string o un objeto
@@ -24,12 +24,36 @@ const crearProducto = (nombre, precio, imagen, descripcion, categoria) => {
      
     });
 };
- 
 
+//-----------Crud delete ------------------- ---//
+
+const eliminarProducto = (id) => {
+    console.log("eliminar a => ", id)
+    return fetch(`https://local-host-ecommerce.herokuapp.com/productos/${id}`, {
+        method: "DELETE",
+    });
+};
+
+
+//------ Crud editar/actualizar ---------------//
+/*
+const editarProducto = (nombre, precio, imagen, descripcion, categoria) => {
+    return fetch(`https://local-host-ecommerce.herokuapp.com/productos/${id}`, {
+        method: "PUT",
+        body: JSON.stringify({nombre, precio, imagen, descripcion, categoria}),
+        headers: {
+            "Content-Type": "application/json"
+        }
+    }).then(respuesta => respuesta).catch(error => console.log(error));
+}*/
+ 
+// envio todas las peticiones a la carpeta archivos-peticiones.js 
 export const clienteServidor = {
     listaProductos,
     verProducto,
     crearProducto,
+    eliminarProducto,
+    
 }
 
 

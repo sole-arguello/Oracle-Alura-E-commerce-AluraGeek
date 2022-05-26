@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=yes, minimum-scale=1.0, maximum-scale=3.0, initial-scale=1.0" />
     
-    <title>Todos los productos</title>
+    <title>Todos los productos editables</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">  
     <link rel="stylesheet" href="../assets/archivos-css/reset.css">
@@ -40,6 +40,7 @@
 
                 <div class="contenido__todos-los-productos">
                     <h2 class="todos-los-productos__titulo">Todos los productos</h2>
+                    <a class="todos-los-productos__btn" href="./agregar-producto.html">Agregar producto</a>
                 </div>
     
             </section>
@@ -47,9 +48,9 @@
             <section class="seccion__galeria seccion__todos-los-productos">
     
                 
-                <div class="contenido__card" data-todos-los-productos>
+                <div class="contenido__card" data-todos-prod-editables>
                        
-            <!-- Aqui van las tarjetas de productos desde el Crud todos-los-productos.js  -->
+            <!-- Aqui van las tarjetas de productos desde el Crud todos-los-productos-editables.js  -->
                                       
                 </div>
                 
@@ -92,7 +93,7 @@
     </main> 
 
     <script src="https://kit.fontawesome.com/26f759a832.js" crossorigin="anonymous"></script>
-    <script type="module" src="../archivos-peticiones/todos-los-productos.js"></script>
+    <script type="module" src="../archivos-peticiones/eliminar-producto.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>

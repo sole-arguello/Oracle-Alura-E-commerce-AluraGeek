@@ -37,18 +37,21 @@
         <section class="seccion__login">
             
             <h1 class="login__titulo">Iniciar Sesion</h1>
-            <form class="login__form">
+            <div class="login__form" >
 
-                <input class="login__form--correo" name="email" type="email" placeholder="Escriba su correo electronico" required data-tipo="email">
-              <!--  <span class="login__mensaje--error">Este campo no es valido</span> -->
+                <div class="input-form">
+                    <input class="login__form--correo inputs" name="usuario" id="usuario" type="text" placeholder="Escribe tu usuario" required pattern="" data-tipo="usuario">
+                    <span class="input-message-error"></span>
+                </div>
+ 
+                <div class="input-form">
+                    <input class="login__form--contrasenia inputs" name="contrasenia" id="=contrasenia" type="password" placeholder="Escriba su contraseña" pattern="^([a-z 0-9]{0,8})$" required data-tipo="contrasenia">
+                    <span class="input-message-error"></span>
+                </div>
                 
-                <input class="login__form--contrasenia" name="password" type="password" placeholder="Escriba se contraseña" required data-tipo="password"
-                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$" title="Al menos 6 caracteres, maximo 12, debe contener una letra minuscula, uan letra mayuscula, un numero y no pede contener caracteres especiales">
-                <!-- <span class="login__mensaje--error">Este campo no es valido</span> -->
-                
-                <a class="login__form--btn-entrar" href="./productos-editables.html">Entrar</a>
+                <a id="btnEnviarLogin" class="login__form--btn-entrar">Entrar</a>
     
-            </form>
+            </div>
 
         </section>
 
@@ -69,14 +72,23 @@
                     <a class="informacion" href="#">Programa de fidelidad</a>
                     <a class="informacion" href="#">Nuestra Tiendas</a>
                     <a class="informacion" href="#">Quiero ser franquiciado</a>
-                    <a class="informacion" href="#">Auncie aqui</a>
+                    <a class="informacion" href="#">Anuncie aqui</a>
                 </div>
             </div>
             
             <div class="contacto__contenido--formulario">
                 <h2 class="formulario__titulo">Hable con nosotros</h2>
-                <input class="formulario__nombre" type="text" placeholder="Nombre" maxlength="40">
-                <textarea rows="7" class="formulario__mensaje" type="text" placeholder="Escribe tu mensaje" maxlength="120"></textarea>
+
+                <div class="input-form">
+                    <input class="formulario__nombre inputs" name="nombre" id="nombre" type="text" placeholder="Nombre" required data-tipo="nombre">
+                    <span class="input-message-error"></span>
+                </div>
+                
+                <div class="input-form">
+                    <textarea rows="7" class="formulario__mensaje inputs" name="mensaje" id="mensaje" type="text" placeholder="Escribe tu mensaje" required data-tipo="mensaje"></textarea>
+                    <span class="input-message-error"></span>
+                </div>
+
                 <button class="formulario__btn--enviar">Enviar mensaje</button>
             </div>
         </section>
@@ -89,5 +101,6 @@
     
     <script src="https://kit.fontawesome.com/26f759a832.js" crossorigin="anonymous"></script>
     <script src="../archivos-js/validar-login.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../archivos-js/app.js" type="module"></script>
 </body>
-</html>

@@ -50,7 +50,7 @@
                 <img class="agregar-producto__imagen-letra" src="../assets/imagenes/agregar-productos/O.png" alt="imagen letra letra--O">
                     
                 <a class="agregar-producto__btn--buquedaImagen" data-btn>Busque en su computador</a>
-                <input type="file" hidden data-input>
+                <input type="file" name="archivo-imagen" hidden data-input>
             
             </div>
 
@@ -74,11 +74,16 @@
 
             <form class="agregar-producto__form" data-form-agregar>
 
-                <input class="agregar-producto__form--producto" type="text" placeholder="Nombre del producto" maxlength="" required data-nombre>
-                <span hidden class="input-mensaje-error">Este campo es requerido</span>
- 
-                <input class="agregar-producto__form--precio" type="text" placeholder="Precio del producto" maxlength="8" required data-precio>
-                <span hidden class="input-mensaje-error">Este campo es requerido</span>
+                <div>
+                    <input class="agregar-producto__form--producto inputs" name="producto" id="producto" type="text" placeholder="Nombre del producto" pattern="^[A-Za-z]+$" required data-tipo="nombreProducto">
+                    <span class="input-message-error"></span>
+                </div>
+                
+                <div>
+                    <input class="agregar-producto__form--producto inputs" name="precio" id="" type="text" placeholder="Precio del producto" 
+                    pattern="^(\$\d{0,8})(\.\d{1,2})?$" required data-tipo="precioProducto">
+                    <span class="input-message-error"></span>
+                </div>
 
                 <div class="agregar-producto__cont-categorias">
                     <p>Categoria</p>
@@ -88,11 +93,13 @@
                         <option>Consolas</option>
                         <option>Diversos</option>
                     </select>
-                </div>                   
-                    
-                <textarea rows="7" class="agregar-producto__form--descripcion" type="text" placeholder="Descripcion del producto" maxlength="120" required data-descr></textarea>
-                <span class="input-mensaje-error">Este campo es requerido</span>
+                </div>
 
+                <div>
+                    <textarea rows="7" class="agregar-producto__form--descripcion inputs" type="text" placeholder="Descripcion del producto" required data-tipo="descripcionProducto" maxlength="300"></textarea>
+                    <span class="input-message-error"></span>
+                </div>               
+                
                 <button type="submit" class="agregar-producto__form--btn-agregar" data-btn-agregar>Agregar producto</button>
 
                 <!--<input type="submit" hidden data-btn-agregar>-->
@@ -120,10 +127,19 @@
                 </div>
             </div>
             
-            <div class="contacto__contenido--formulario" >
+            <div class="contacto__contenido--formulario">
                 <h2 class="formulario__titulo">Hable con nosotros</h2>
-                <input class="formulario__nombre" type="text" placeholder="Nombre" maxlength="40">
-                <textarea rows="7" class="formulario__mensaje" type="text" placeholder="Escribe tu mensaje" maxlength="120"></textarea>
+
+                <div class="input-form">
+                    <input class="formulario__nombre inputs" name="nombre" id="nombre" type="text" placeholder="Nombre" required data-tipo="nombre">
+                    <span class="input-message-error"></span>
+                </div>
+                
+                <div class="input-form">
+                    <textarea rows="7" class="formulario__mensaje inputs" name="mensaje" id="mensaje" type="text" placeholder="Escribe tu mensaje" required data-tipo="mensaje"></textarea>
+                    <span class="input-message-error"></span>
+                </div>
+
                 <button class="formulario__btn--enviar">Enviar mensaje</button>
             </div>
         </section>
@@ -139,6 +155,7 @@
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>    
     <script src="../archivos-peticiones/agregar-producto-img.js"></script>
     <script type="module" src="../archivos-peticiones/agregar-producto.js"></script>
+    <script src="../archivos-js/app.js" type="module"></script>
         
 </body>
 </html>

@@ -15,6 +15,7 @@
         flex-direction: column;
         align-items: center;
     }
+
         .login__form--correo,
         .login__form--contrasenia{
             background-color: var(--bacground-fondo-balnco);
@@ -28,6 +29,17 @@
             font-weight: 400;
             padding-left: 30px;
         }
+    /*validacion formulario*/
+    .input-form .input-container--invalid{
+        border: .1rem solid red;
+    }
+    .input-message-error{
+        display: none;
+    }
+    .input-message-error{
+        color: red;
+        display: block;
+    }
         .login__form--btn-entrar{
             width: 450px;
             height: 40px;

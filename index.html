@@ -115,14 +115,23 @@
                     <a class="informacion" href="#">Programa de fidelidad</a>
                     <a class="informacion" href="#">Nuestra Tiendas</a>
                     <a class="informacion" href="#">Quiero ser franquiciado</a>
-                    <a class="informacion" href="#">Auncie aqui</a>
+                    <a class="informacion" href="#">Anuncie aqui</a>
                 </div>
             </div>
-            
+                        
             <div class="contacto__contenido--formulario">
                 <h2 class="formulario__titulo">Hable con nosotros</h2>
-                <input class="formulario__nombre" type="text" placeholder="Nombre" maxlength="40">
-                <textarea rows="7" class="formulario__mensaje" type="text" placeholder="Escribe tu mensaje" maxlength="120"></textarea>
+
+                <div class="input-form">
+                    <input class="formulario__nombre inputs" name="nombre" id="nombre" type="text" placeholder="Nombre" required data-tipo="nombre">
+                    <span class="input-message-error"></span>
+                </div>
+                
+                <div class="input-form">
+                    <textarea rows="7" class="formulario__mensaje inputs" name="mensaje" id="mensaje" type="text" placeholder="Escribe tu mensaje" required data-tipo="mensaje"></textarea>
+                    <span class="input-message-error"></span>
+                </div>
+
                 <button class="formulario__btn--enviar">Enviar mensaje</button>
             </div>
         </section>
@@ -135,5 +144,6 @@
         <!-----SCRIPT-------------------->
     <script src="https://kit.fontawesome.com/26f759a832.js" crossorigin="anonymous"></script>
     <script type="module" src="./archivos-peticiones/crear-index-productos.js"></script>
+    <script type="module" src="./archivos-js/app.js"></script>
 </body>
 </html>

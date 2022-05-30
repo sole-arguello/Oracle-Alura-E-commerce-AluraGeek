@@ -1,9 +1,8 @@
-
-
+//validacion de ususario y password
 const loginUsuario = () =>{
 
-    const correoIgresado = document.querySelector('[]').value;
-    const contraseniaIngresada = document.querySelector('[]').value;
+    const correoIgresado = document.querySelector('[data-input-email]').value;
+    const contraseniaIngresada = document.querySelector('[data-input-pass]').value;
 
     console.log(correoIgresado);
     console.log(contraseniaIngresada);
@@ -27,8 +26,17 @@ const loginUsuario = () =>{
         }else{
           Swal.fire({
             icon: 'error',
-            title: 'Oops...',
-            text: 'Datos incorrectos',
+            title: 'Oops...Datos incorrectos ',
+            text: 'USUARIO: adm@alura.com - PASS: alurageek1234',
         });
     }
+    correoIgresado.reset();
+    contraseniaIngresada.reset();
 }
+
+//capturo el boton enviar y le envio la funcion 
+const btnEnviar = document.querySelector('#btnEnviarLogin');
+btnEnviar.addEventListener('click', (e) => {
+    e.preventDefault();
+    loginUsuario();
+});

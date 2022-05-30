@@ -40,6 +40,7 @@
             font-weight: 700;
         }
         .formulario__nombre{
+            width: 95%;
             font-family: var(--Releway);
             color: var(--color-gris-palido);
             border: none;
@@ -51,7 +52,7 @@
             box-shadow: var(--sombra-input);
         }
         .formulario__mensaje{
-            width: 100%;
+            width: 98%;
             font-family: var(--Releway);
             font-weight: 400;
             display: block;
@@ -64,6 +65,22 @@
             box-sizing: border-box;
             box-shadow: var(--sombra-input);
         }
+
+        /*validacion formularios*/
+        .input-form{
+
+        }
+        .input-container--invalid .formulario__nombre .formulario__mensaje{
+            border: .1rem solid red;
+        }
+        .input-message-error{
+            display: none;
+        }
+        .input-message-error{
+            color: red;
+            display: block;
+        }
+        
         .formulario__btn--enviar{
             color: var(--color-blanco);
             background-color: var(--color-azul);

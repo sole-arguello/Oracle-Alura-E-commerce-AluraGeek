@@ -16,8 +16,8 @@ export const mostraCardProdEditables = ( id, nombre, precio, imagen, descripcion
         <img class="productos__img" src="${imagen}">
 
         <div class="productos___editables_iconos" >
-            <a class="productos__editables-icon" id="delete"><i class="fa-solid fa-trash-can"></i></a>
-            <a class="productos__editables-icon" id="editar"><i class="fa-solid fa-pen"></i></a>
+            <a class="productos__editables-icon delete" id="${id}"><i class="fa-solid fa-trash-can"></i></a>
+            <a class="productos__editables-icon" href="enlace a editar${id}"><i class="fa-solid fa-pen"></i></a>
         </div>
 
     </div>
@@ -32,12 +32,11 @@ export const mostraCardProdEditables = ( id, nombre, precio, imagen, descripcion
 
 //-----------Capturo el boton ELIMINAR -----------------//
 
-    const btnEliminarProducto = todasLasCardEditables.querySelector('#delete');
-
+    const btnEliminarProducto = todasLasCardEditables.querySelector('.delete');
     btnEliminarProducto.addEventListener('click', () => {
-    
+    //guardo el id para luego preguntar 
     const id = btnEliminarProducto.id;
-    
+    //pregunto si elimina o no
     Swal.fire({
         title: 'Esta seguro?',
         text: `Quiere eliminar el producto: ${nombre} ? esta accion es irreversible!`,
@@ -46,12 +45,12 @@ export const mostraCardProdEditables = ( id, nombre, precio, imagen, descripcion
         confirmButtonColor: 'red',
         cancelButtonColor: 'green',
         confirmButtonText: 'Si, eliminarlo!'
-    }).then((resultado) => {
-        if(resultado.isConfirmed){
-            clienteServidor.eliminarProducto(id).then(respuesta =>{
-                console.log(respuesta);
-            }).catch(error => alert('Ocurrio un error al momento de eliminar'));
 
+    }).then((resultado) => {
+        if(resultado.isConfirmed){//si la respuesta es si elimina?  
+            clienteServidor.eliminarProducto(id).then(respuesta =>{
+            }).catch(error => alert('Ocurrio un error al momento de eliminar'));
+            //confirmo que fue eliminado
             Swal.fire({
                 position: 'center',
                 icon: 'success',
@@ -61,7 +60,8 @@ export const mostraCardProdEditables = ( id, nombre, precio, imagen, descripcion
             });
             setTimeout(function(){
                 const limpiarContenido = ``;
-                productosEditables.innerHTML = limpiarContenido;//traigo de la linea 3 
+                //productoEditable lo traigo de la linea 3 
+                productosEditables.innerHTML = limpiarContenido;
                 imprimirProductos();
 
             }, 1700);

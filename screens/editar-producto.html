@@ -1,1 +1,161 @@
-aqui vamos a editar
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=yes, minimum-scale=1.0, maximum-scale=3.0, initial-scale=1.0" />
+    
+    <title>AluraGeek</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="../assets/archivos-css/reset.css">
+    <link rel="stylesheet" href="../assets/archivos-css/bases.css">
+    <link rel="stylesheet" href="../assets/archivos-css/cabecera.css" media="all" >
+    <link rel="stylesheet" href="../assets/archivos-css/agragar-producto.css" media="all">
+    <link rel="stylesheet" href="../assets/archivos-css/seccion-contacto.css" media="all">
+    <link rel="stylesheet" href="../assets/archivos-css/seccion-footer.css">
+</head>
+<body>
+    
+    <header class="cabecera">
+        <div class="cabecera__container">
+            <div class="cabecera__logo">
+                <a class="cabecera__inicio-pagina" href="../index.html">
+                    <img src="../assets/imagenes/cabecera/Logo.png" class="logo" alt="logo">
+                </a>
+                <div class="cabecera__barra-busqueda">
+                    <input class="barra--busqueda" type="text" placeholder="¿Que desea buscar?">
+                    <i class="fa-solid fa-magnifying-glass icono--lupa"></i>
+                </div>
+            </div>
+            <a class="btn__login" href="./login.html" target="_blank">Login</a>
+        </div>
+
+    </header>
+
+    <main>
+        <section class="seccion__agregar-producto">
+ 
+            <h2 class="agregar-producto__titulo">Agregar nuevo producto</h2>
+
+
+            <div class="agregar-producto__agregar-imagen-btn">
+                
+                <div class="agregar-producto__agregar-imagen-arrastre" data-agregar-img>
+                    <img class="agregar-producto__img-tablet" src="../assets/imagenes/agregar-productos/agregar-prod.png" alt="imagen agrgar">
+                    <img class="agregar-producto__img-movil" src="../assets/imagenes/agregar-productos/agregar-movil.png" alt="imagen agregar">
+                    <p class="agregar-producto__texto" data-text>Arrastre para agregar una imagen al producto</p>
+                </div>
+                    
+                <img class="agregar-producto__imagen-letra" src="../assets/imagenes/agregar-productos/O.png" alt="imagen letra letra--O">
+                    
+                <a class="agregar-producto__btn--buquedaImagen" data-btn>Busque en su computador</a>
+                <input type="file" name="archivo-imagen" hidden data-input>
+            
+            </div>
+
+<!--
+            <div class="agregar-producto__contenidoTodo">
+
+                <h2 class="agregar-producto__titulo">Agregar nuevo producto</h2>
+
+                <div class="agregar-producto__agregar-imagen" data-arrastrar-img>
+                    <div class="agregar-producto icon"><i class="fas fa-cloud-upload-alt"></i></div>
+    
+                    <header class="agregar-producto__texto" data-text>El arcvivo esta FUERA del area de colocacion</header>
+                    
+                    <span>O</span>
+
+                    <button class="agregar-producto__btn-buscar-img" data-btn>Busque en su computador</button>
+                
+                    <input type="file" hidden data-input>
+                </div>
+            -->
+
+            <form class="agregar-producto__form" data-form-agregar>
+
+                <div>
+                    <input class="agregar-producto__form--producto inputs" name="producto" id="producto" type="text" placeholder="Nombre del producto" pattern="^[A-Za-z]+$" required data-tipo="nombreProducto">
+                    <span class="input-message-error"></span>
+                </div>
+                
+                <div>
+                    <input class="agregar-producto__form--producto inputs" name="precio" id="" type="text" placeholder="Precio del producto" 
+                    pattern="^(\$\d{0,8})(\.\d{1,2})?$" required data-tipo="precioProducto">
+                    <span class="input-message-error"></span>
+                </div>
+
+                <div class="agregar-producto__cont-categorias">
+                    <p>Categoria</p>
+                    <select class="selec-cat" data-categ>
+                        <option >Elija una Categoria</opcion>
+                        <option>Star Wars</option>
+                        <option>Consolas</option>
+                        <option>Diversos</option>
+                    </select>
+                </div>
+
+                <div>
+                    <textarea rows="7" class="agregar-producto__form--descripcion inputs" type="text" placeholder="Descripcion del producto" required data-tipo="descripcionProducto" maxlength="300"></textarea>
+                    <span class="input-message-error"></span>
+                </div>               
+                
+                <button type="submit" class="agregar-producto__form--btn-agregar" data-btn-agregar>Agregar producto</button>
+
+                <!--<input type="submit" hidden data-btn-agregar>-->
+            </form>
+
+        </section>
+ <!-------CONTACTO------------------------------------->        
+        <section class="seccion__contacto">
+            <div class="contacto__contenido-logo--informacion">
+                <div class="contacto__contenido--logo">
+                
+                    <a class="" href="#">
+                        <img src="../assets/imagenes/cabecera/Logo.png" class="logo" alt="logo">
+                    </a>
+    
+                </div>
+                
+                <div class="contacto__contenido--informacion">
+                    <a class="informacion" href="#">Quienes somos</a>
+                    <a class="informacion" href="#">Politica de privacidad</a>
+                    <a class="informacion" href="#">Programa de fidelidad</a>
+                    <a class="informacion" href="#">Nuestra Tiendas</a>
+                    <a class="informacion" href="#">Quiero ser franquiciado</a>
+                    <a class="informacion" href="#">Auncie aqui</a>
+                </div>
+            </div>
+            
+            <div class="contacto__contenido--formulario">
+                <h2 class="formulario__titulo">Hable con nosotros</h2>
+
+                <div class="input-form">
+                    <input class="formulario__nombre inputs" name="nombre" id="nombre" type="text" placeholder="Nombre" required data-tipo="nombre">
+                    <span class="input-message-error"></span>
+                </div>
+                
+                <div class="input-form">
+                    <textarea rows="7" class="formulario__mensaje inputs" name="mensaje" id="mensaje" type="text" placeholder="Escribe tu mensaje" required data-tipo="mensaje"></textarea>
+                    <span class="input-message-error"></span>
+                </div>
+
+                <button class="formulario__btn--enviar">Enviar mensaje</button>
+            </div>
+        </section>
+<!-------FOOTER--------------------------------------->
+        <footer class="seccion__footer">
+            <h2 class="footer__titulo">Desarrollado por Arguello Soledad</h2>
+            <p class="footer__fecha">2022</p>
+        </footer>
+    </main> 
+
+    <script src="https://kit.fontawesome.com/26f759a832.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>    
+    <script src="../archivos-peticiones/agregar-producto-img.js"></script>
+    <script type="module" src="../archivos-peticiones/agregar-producto.js"></script>
+    <script src="../archivos-js/app.js" type="module"></script>
+        
+</body>
+</html>

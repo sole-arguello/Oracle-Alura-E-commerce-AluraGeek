@@ -18,6 +18,10 @@
             display: flex;
             justify-content: space-between;
             width: 98%;
+            /*----aplica al titulo resultado*/
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 5%;
         }
             .productos__titulo{
                 font-size: 32px;

@@ -7,7 +7,7 @@ export const mostrarCardProductos = (id,nombre, precio, imagen, descripcion, cat
     cardProducto.classList.add('productos__menu');
     cardProducto.innerHTML = `
     <li class="productos__lista">
-        <img class="productos__img" src="${imagen}">
+        <img class="productos__img " src="${imagen}">
         <p class="producto__descripcion">${nombre}</p>
         <p class="producto__precio">${precio}</p>
         <a class="producto__link" href="../screens/ver-productos.html?id=${id}">Ver producto</a>

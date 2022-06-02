@@ -3,7 +3,7 @@ const url = 'https://local-host-ecommerce.herokuapp.com/productos';
 
 //------- COMIENZA EL CRUD -----------//
 
-//todos los productos (editables.html y no editables.html y similares.html)
+//todos los productos (editables.html y no editables.html - verProducto.html y similares - buscar-producto.html)
 const listaProductos = () => fetch(url)
 .then( respuesta => respuesta.json());
 
@@ -13,7 +13,7 @@ const verProducto = async (id) => {
     .then(respuesta => respuesta.json());
 };
 
-//-------------Crud de Crear ----------//creo producto que es utilizado en agregar-producto.html con agregar-img.js y agregar-prod.js
+//-------------Crud de Crear ----------// para crear-inex.js - agregar-producto.html con agregar-img.js y agregar-prod.js
 const crearProducto = (nombre, precio, imagen, descripcion, categoria) => {
     return fetch(url, {
       method: "POST",               // data puede ser string o un objeto
@@ -25,7 +25,7 @@ const crearProducto = (nombre, precio, imagen, descripcion, categoria) => {
     });
 };
 
-//-----------Crud delete ------------------- ---//
+//-----------Crud delete -------------------// para eliminar-producto.js y todos-los-productos-editables
 
 const eliminarProducto = (id) => {
     console.log("eliminar a => ", id)
@@ -35,9 +35,9 @@ const eliminarProducto = (id) => {
 };
 
 
-//------ Crud editar/actualizar ---------------//
-/*
-const editarProducto = (nombre, precio, imagen, descripcion, categoria) => {
+//------ Crud editar/actualizar ---------------//para editar.html
+
+const editarProducto = (id, nombre, precio, imagen, descripcion, categoria) => {
     return fetch(`https://local-host-ecommerce.herokuapp.com/productos/${id}`, {
         method: "PUT",
         body: JSON.stringify({nombre, precio, imagen, descripcion, categoria}),
@@ -45,7 +45,7 @@ const editarProducto = (nombre, precio, imagen, descripcion, categoria) => {
             "Content-Type": "application/json"
         }
     }).then(respuesta => respuesta).catch(error => console.log(error));
-}*/
+};
  
 // envio todas las peticiones a la carpeta archivos-peticiones.js 
 export const clienteServidor = {
@@ -53,7 +53,7 @@ export const clienteServidor = {
     verProducto,
     crearProducto,
     eliminarProducto,
-    
+    editarProducto,
 }
 
 

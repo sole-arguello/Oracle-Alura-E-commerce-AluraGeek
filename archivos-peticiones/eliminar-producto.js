@@ -8,6 +8,7 @@ export const mostraCardProdEditables = ( id, nombre, precio, imagen, descripcion
 
     const todasLasCardEditables = document.createElement('div');
     todasLasCardEditables.classList.add('productos__card');
+    //voy desde el boton eliminar(btnEliminarProducto) y desde editar direcciono al index editar-producto.html
      const contenido = `
     <li class="productos__lista">
 
@@ -17,7 +18,7 @@ export const mostraCardProdEditables = ( id, nombre, precio, imagen, descripcion
 
         <div class="productos___editables_iconos" >
             <a class="productos__editables-icon delete" id="${id}"><i class="fa-solid fa-trash-can"></i></a>
-            <a class="productos__editables-icon" href="enlace a editar${id}"><i class="fa-solid fa-pen"></i></a>
+            <a class="productos__editables-icon" href="../screens/editar-producto.html?id=${id}"><i class="fa-solid fa-pen"></i></a>
         </div>
 
     </div>
@@ -83,16 +84,4 @@ const imprimirProductos = () =>{
     }).catch(err => alert('Ocurrio un error'));
 }
 imprimirProductos();
-
-
-
-
-
-
-
-
-
-
-
-
 
